@@ -1,0 +1,79 @@
+<div class="grid lg:grid-cols-3 gap-8 mt-10 ml-10 mr-10 mb-20 pt-0">
+    <aside class="lg:col-span-1 space-y-6 order-last lg:order-first">
+        <div class="service-card">
+            <h2 class="service-heading">{{asideHeading}}</h2>
+            <ul class="space-y-2">
+                <li>
+                    <a href="{{serviceOneLink}}" class="service-link">
+                        {{service1}}
+                    </a>
+                </li>
+                <li>
+                    <a href="{{serviceTwoLink}}" class="service-link">
+                        {{service2}}
+                    </a>
+                </li>
+                <li>
+                    <a href="{{serviceThreeLink}}" class="service-link">
+                        {{service3}}
+                    </a>
+                </li>
+                <li>
+                    <a href="{{serviceFourLink}}" class="service-link">
+                        {{service4}}
+                    </a>
+                </li>
+                <li>
+                    <a href="{{serviceFiveLink}}" class="service-link">
+                        {{service5}}
+                    </a>
+                </li>
+                <li>
+                    <a href="{{serviceSixLink}}" class="service-link">
+                        {{service6}}
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="contact-card">
+            <img src="{{phoneImg}}" alt="Phone" class="h-12 w-12 mr-4">
+            <div>
+                <h3 class="text-lg font-semibold">{{expertTalk}}</h3>
+                <p class="mt-1">{{contactNumber}}</p>
+            </div>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <p>{{serviceText}}</p>
+
+        <div class="carousel-container">
+            <div class="flex transition-transform duration-500" id="carousel-images">
+                <img src="{{plumbingServiceImg1}}" alt="Roof Image 1"
+                    class="w-full h-64 md:h-80 object-cover flex-shrink-0">
+                <img src="../images/commercialPlumbing.png" alt="Roof Image 2"
+                    class="w-full h-64 md:h-80 object-cover flex-shrink-0">
+            </div>
+
+            <button class="carousel-button left-0" id="prev-btn">&larr;</button>
+            <button class="carousel-button right-0" id="next-btn">&rarr;</button>
+        </div>
+
+        <h3 class="section-title">{{sectionText}}</h3>
+        <p class="mt-4 text-gray-600">
+            {{serviceTextTwo}}
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="icon-container">
+                <img src="{{serviceIcon}}" alt="icon" class="h-10">
+                <p class="icon-text">{{iconText1}}</p>
+            </div>
+            <div class="icon-container">
+                <img src="{{serviceIcon}}" alt="icon" class="h-10">
+                <p class="icon-text">{{iconText2}}</p>
+            </div>
+        </div>
+    </main>
+</div>

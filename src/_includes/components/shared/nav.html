@@ -24,17 +24,17 @@
         <li class="relative group">
             <a href="{{ '/services/' | url }}">Services</a>
             <ul class="desktop-dropdown">
-                <li><a href="#" class="desktop-dropdown-link">Plumbing
+                <li><a href="{{ '/services/service1' | url }}" class="desktop-dropdown-link">Plumbing
                         Services</a></li>
-                <li><a href="" class="desktop-dropdown-link">Installation
+                <li><a href="{{ '/services/service2' | url }}" class="desktop-dropdown-link">Installation
                         Services</a></li>
-                <li><a href="" class="desktop-dropdown-link">Specialized
+                <li><a href="{{ '/services/service3' | url }}" class="desktop-dropdown-link">Specialized
                         Plumbing Services</a></li>
-                <li><a href="" class="desktop-dropdown-link">Residential
+                <li><a href="{{ '/services/service4' | url }}" class="desktop-dropdown-link">Residential
                         Services</a></li>
-                <li><a href="" class="desktop-dropdown-link">Commercial
+                <li><a href="{{ '/services/service5' | url }}" class="desktop-dropdown-link">Commercial
                         Plumbing Services</a></li>
-                <li><a href="" class="desktop-dropdown-link">Maintenance
+                <li><a href="{{ '/services/service6' | url }}" class="desktop-dropdown-link">Maintenance
                         Services</a></li>
             </ul>
         </li>
@@ -63,8 +63,7 @@
     <div class="flex items-center space-x-4">
         <div class="contact-number">Call : {{businessInfo.businessPhone}}</div>
         <a href="{{ '/contact/' | url }}">
-            <button
-                class="bg-red-600 text-white px-4 py-2 rounded lg:block hidden transform transition duration-300 ease-in-out hover:bg-red-600 hover:scale-105 hover:shadow-lg btn-hidden">Book
+            <button class="btn-red p-3 font-normal text-base">Book
                 Service</button>
         </a>
     </div>

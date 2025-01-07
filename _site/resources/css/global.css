@@ -1019,3 +1019,47 @@
 .area-info-text {
     @apply mt-5 p-6 bg-white shadow-lg;
 }
+
+/* Services Pages */
+
+/* Define reusable utility classes using @apply */
+.service-card {
+    @apply bg-gray-50 shadow-lg rounded-lg p-6 border-l-4 border-blue-600;
+  }
+  
+  .service-heading {
+    @apply text-lg font-bold text-gray-800 mb-4;
+  }
+  
+  .service-link {
+    @apply block px-4 py-3 bg-blue-100 text-blue-700 font-medium rounded-lg hover:bg-blue-200;
+  }
+  
+  .contact-card {
+    @apply bg-black text-white rounded-lg p-6 shadow-lg flex items-center;
+  }
+  
+  .carousel-container {
+    @apply relative w-full overflow-hidden rounded-lg mt-6;
+  }
+  
+  .carousel-button {
+    @apply absolute top-1/2 -translate-y-1/2 bg-gray-800 text-white font-bold rounded p-2 focus:outline-none;
+  }
+  
+  .main-content {
+    @apply lg:col-span-2 bg-white p-5 pt-0 text-gray-600;
+  }
+  
+  .section-title {
+    @apply text-2xl font-semibold mt-8;
+  }
+  
+  .icon-container {
+    @apply flex items-start space-x-4 mt-6;
+  }
+  
+  .icon-text {
+    @apply text-gray-600;
+  }
+  
