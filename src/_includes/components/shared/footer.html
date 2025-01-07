@@ -1,0 +1,73 @@
+<!-- Map -->
+
+<div class="map-container" style="height: 450px;">
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387194.06217238074!2d-74.30932166836448!3d40.697019303516804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1731671011048!5m2!1sen!2sin"
+        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <div class="map-placeholder">
+        <i class="fa-solid fa-location-dot"></i>
+    </div>
+</div>
+
+<!-- Footer -->
+
+<div class="footer">
+    <div class="footer-container">
+        <div class="footer-style">
+            <div class="footer-logo">
+                <img src="resources/assets/logo.png" alt="Logo">
+                <p class="text-sm mt-2 ml-3 text-gray-400">{{businessInfo.businessName}}</p>
+            </div>
+
+            <div class="footer-icons">
+                <a href="#" aria-label="Facebook" class="footer-icons-style">
+                    <i class="fab fa-facebook-f text-2xl"></i>
+                </a>
+                <a href="#" aria-label="Twitter" class="footer-links-style">
+                    <i class="fab fa-twitter text-2xl"></i>
+                </a>
+                <a href="#" aria-label="Instagram" class="footer-links-style">
+                    <i class="fab fa-instagram text-2xl"></i>
+                </a>
+                <a href="#" aria-label="LinkedIn" class="footer-links-style">
+                    <i class="fab fa-linkedin-in text-2xl"></i>
+                </a>
+                <a href="#" aria-label="YouTube" class="footer-links-style">
+                    <i class="fab fa-youtube text-2xl"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-links">
+            <div class="links-alignment">
+                <a href="index.html">Home</a>
+                <a href="./pages/contactUs.html">Contact us</a>
+                <a href="./pages/aboutUs.html">About Us</a>
+                <a href="./pages/areaServed.html">Area Served</a>
+                <a href="./pages/ourservices.html">Services</a>
+                <a href="./pages/blog.html">Blog</a>
+                <a href="./pages/sitemap.html">Sitemap</a>
+                <a href="./pages/gallery.html">Gallery</a>
+            </div>
+        </div>
+
+        <div class="footer-payment-modes">
+            <div class="w-full flex justify-center space-x-4">
+                <a href=""><img src="resources/assets/visa.png" alt="Visa"></a>
+                <a href=""><img src="resources/assets/american-express.png" alt="American Express"></a>
+                <a href=""><img src="resources/assets/card.png" alt="MasterCard"></a>
+                <a href=""> <img src="resources/assets/discover.png" alt="Discover"></a>
+                <a href=""><img src="resources/assets/money.png" alt="Cash"></a>
+                <a href=""> <img src="resources/assets/checkbook.png" alt="Check"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="text-center text-m text-white bg-blue-500 py-5">
+    <p>Copyright © 2024 by Company. All Rights Reserved.</p>
+    <a href="{{ '/privacy-policy/' | url }}">Privacy & Policy</a>
+    <a href="{{ '/terms-and-conditions/' | url }}" class="ml-3">Terms & Conditions</a>
+</div>

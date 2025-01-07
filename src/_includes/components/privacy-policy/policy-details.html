@@ -1,0 +1,25 @@
+<div class="policy-container">
+    <h1 class="policy-title">
+        {{ policy.title }}
+    </h1>
+
+    {% for section in policy.sections %}
+    <section class="mb-8">
+        <h2 class="policy-heading">
+            {{ section.heading }}
+        </h2>
+
+        {% if section.content is string %}
+        <p class="text-base leading-7">{{ section.content }}</p>
+        {% else %}
+        <ul class="space-y-4">
+            {% for item in section.content[0].items %}
+            <li>
+                <strong>{{ item.title }}</strong> {{ item.description }}
+            </li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </section>
+    {% endfor %}
+</div>

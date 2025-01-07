@@ -1,0 +1,27 @@
+<section class="py-10 mt-5 mb-5">
+    <div class="blog-container">
+        <div class="blog-cards-style">
+            {% for blog in blog %}
+            <a href="{{ blog.url }}" class="group block">
+                <div class="bg-blog">
+                    <img src="{{ blog.image }}" alt="Blog Image" class="blog-image">
+                    <div class="blog-texts">
+                        <p class="text-sm text-gray-500">{{ blog.date }} · {{ blog.comments }} Comments</p>
+                        <h2 class="blog-titles">
+                            {{ blog.title }}
+                        </h2>
+                        <p class="blog-description">
+                            {{ blog.description }}
+                        </p>
+                    </div>
+                    <div class="p-4 flex space-x-3">
+                        <i class="fab fa-facebook text-blue-500 text-xl"></i>
+                        <i class="fab fa-twitter text-blue-400 text-xl"></i>
+                        <i class="fab fa-whatsapp text-green-500 text-xl"></i>
+                    </div>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>

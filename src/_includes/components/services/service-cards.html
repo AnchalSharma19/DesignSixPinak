@@ -1,0 +1,27 @@
+<section class="service-cards-section">
+    <div class="text-center mb-8">
+        <h2 class="service-section-heading">
+            {{serviceSectionHeading1}} <span class="text-primary">{{serviceSectionHeading2}}</span> <br>
+            {{serviceSectionHeading3}}
+            <span class="text-primary">{{serviceSectionHeading4}}</span> {{serviceSectionHeading5}}
+        </h2>
+    </div>
+
+    <div class="service-cards">
+        {% for service in services %}
+        <div class="bg-cards">
+            <h3 class="service-titles">{{ service.title }}</h3>
+            <div class="m-5">
+                <img class="service-img" src="{{ service.image }}" alt="{{ service.alt }}">
+            </div>
+            <div class="pr-4 pl-4">
+                <p class="service-description">{{ service.description }}</p>
+            </div>
+            <div class="flex-grow"></div>
+            <div class="pl-4 pb-4">
+                <a href="{{ service.link }}" class="service-link">Read More</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>

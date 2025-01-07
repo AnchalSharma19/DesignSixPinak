@@ -1,0 +1,77 @@
+{
+    "title": "Privacy Policy (ProHauz)",
+    "sections": [
+        {
+            "heading": "Introduction",
+            "content": "This Privacy Policy outlines how Quix Service LLC (\"Quix Plumbing\", \"we\", or \"us\") handles the personal information of our customers and website visitors (\"you\"). This covers information we collect through our website and services, reflecting our commitment to protect your privacy."
+        },
+        {
+            "heading": "Updates to Our Policy",
+            "content": "We may update this policy to reflect new practices or regulatory changes. Any significant changes will be announced on our website, and, where applicable, we'll contact you for consent for new uses of your personal information."
+        },
+        {
+            "heading": "Information Collection",
+            "content": [
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "title": "Personal Information:",
+                            "description": "We collect information that you voluntarily provide when using our services, like scheduling a service call, applying for a job, or interacting with our site. This may include your name, contact details, and payment information. Job applicants may need to provide additional details relevant to employment considerations."
+                        },
+                        {
+                            "title": "Location Information:",
+                            "description": "For services requiring location accuracy, we use Google Maps Geolocation API, subject to Google's terms and privacy policy."
+                        },
+                        {
+                            "title": "Other Information:",
+                            "description": "We automatically collect certain data when you visit our site, including browser details and visit patterns, purely for analytics and site improvement purposes."
+                        },
+                        {
+                            "title": "Cookies:",
+                            "description": "Our site uses cookies to enhance your experience and analyze site usage. Ad partners may also place cookies to tailor ads based on your site interactions."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "heading": "Use and Sharing of Information",
+            "content": [
+                "We use your information to deliver our services, process payments, respond to inquiries, and for internal analytics. When necessary, we share your information with local contractors or affiliates to provide requested services or for employment purposes.",
+                {
+                    "strong": "Analytics:",
+                    "description": "We utilize Google Analytics to understand site usage better, without linking analytics data to personal information."
+                }
+            ]
+        },
+        {
+            "heading": "Data Retention",
+            "content": "We retain personal information as needed to maintain our relationship and provide our services, and for as long as required by legal or regulatory obligations."
+        },
+        {
+            "heading": "Security",
+            "content": "We are committed to protecting your personal information through industry-standard safeguards and secure processing practices."
+        },
+        {
+            "heading": "Your Choices",
+            "content": "You may update, correct, or delete your personal information by contacting us directly. You can also manage cookie preferences through your browser settings."
+        },
+        {
+            "heading": "Third-Party Sites",
+            "content": "Our site may link to external sites not operated by us. We advise reviewing their privacy policies as we do not control and are not responsible for their content or privacy practices."
+        },
+        {
+            "heading": "Changes to This Policy",
+            "content": "This policy is subject to change without prior notice. We encourage you to review it periodically."
+        },
+        {
+            "heading": "Contact Us",
+            "content": "For questions about this policy or our privacy practices, please contact us at info@quixplumbing.com."
+        },
+        {
+            "heading": "Effective Date",
+            "content": "This policy was last updated on 1/1/2024."
+        }
+    ]
+}

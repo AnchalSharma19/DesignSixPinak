@@ -1,0 +1,33 @@
+<section class="why-choose-us">
+    <div class="flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0 md:space-x-8">
+        <div class="md:w-1/2 space-y-4 animate__animated animate__fadeInLeft pl-10 lg:pl-10">
+            <br>
+            <p class="why-us-subheading">{{whyUsSubheading}}</p>
+            <h1 class="why-us-heading">
+                Trusted <span class="text-primary">{{whyUsHeading1}}</span> {{whyUsHeading2}}
+            </h1>
+            <p class="why-us-text">
+                {{whyusText1}}
+            </p>
+            <p class="why-us-text">
+                {{whyusText2}}
+            </p>
+            <div class="flex items-center">
+                <div>
+                    <div class="contact-icon">
+                        <img src="resources/assets/telephone.png" alt="Phone Icon" class="w-8 h-8">
+                    </div>
+                </div>
+                <div>
+                    <h2 class="contact">{{businessInfo.businessPhone}}</h2>
+                </div>
+            </div>
+            <a href="./pages/contactUs.html"><button class="btn-red mt-5 ml-0 mb-10">
+                    {{serviceCallBtn}}
+                </button></a>
+        </div>
+        <div class="md:w-1/2 flex justify-center animate__animated animate__fadeInRight">
+            <img src="resources/assets/whyChooseUs.png" alt="Plumber" class="w-3/4 self-end">
+        </div>
+    </div>
+</section>

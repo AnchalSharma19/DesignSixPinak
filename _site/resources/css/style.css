@@ -1,0 +1,18 @@
+.progress-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+
+.circle-bg {
+    transform: rotate(-90deg);
+}
+
+.circle-progress {
+    stroke-linecap: round;
+    transition: stroke-dashoffset 1s ease;
+}

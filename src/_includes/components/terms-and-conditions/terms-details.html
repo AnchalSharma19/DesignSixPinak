@@ -1,0 +1,9 @@
+<div class="tandc-section">
+    <h1 class="tandc-title">{{ terms.title }}</h1>
+    {% for section in terms.sections %}
+    <section class="mb-8">
+        <h2 class="tandc-heading">{{ section.heading }}</h2>
+        <p class="tandc-text">{{ section.content }}</p>
+    </section>
+    {% endfor %}
+</div>

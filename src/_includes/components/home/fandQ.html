@@ -1,0 +1,17 @@
+<div class="faq-section">
+    <h1 class="faq-heading">{{faqHeading}}</h1>
+    <h2 class="faq-subheading">{{faqSubHeading}}</h2>
+    <div id="faq-container">
+        {% for item in faq %}
+        <div class="faq-item">
+            <div class="faq-question ">
+                <span>{{ item.question }}</span>
+                <span class="toggle-icon ">+</span>
+            </div>
+            <div class="faq-answer hidden">
+                {{ item.answer }}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

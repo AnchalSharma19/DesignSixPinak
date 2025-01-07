@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery page</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/splide.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+        integrity="sha512-HoTQ5VEB6qw6HkA4fjdFCBIt6Ok/N9fEm2tp+CW4QtPyS8vRlPf8YFK+URf8eVFdMtYY7k2x3uO1fIRY5S6jAQ=="
+        crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <script src="/resources/scripts/app.js"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-thin.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-solid.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-regular.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-light.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-thin.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-solid.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-regular.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-light.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-thin.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-regular.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-light.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-pfaGz+K2+dTb8n6yxL2bZ9bEZb9qynRu9ui7e4/s0Em0fVlxkgjxd38fLnJIAEYek+1PCAg0YuNZoAfkIBpXg=="
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+</html>
+</head>
+
+<body>
+
+    <!-- Header Section-->
+    <nav class="nav-container">
+    <a href="/">
+        <div class="logo">
+            <img src="resources/assets/logo.png" alt="Logo" class="h-16 w-16 mr-1">
+            <div class="logo-text">ProHauz</div>
+        </div>
+    </a>
+
+    <div class="lg:hidden absolute right-6 hamburger-menu">
+        <button id="menu-toggle" class="text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+    </div>
+
+    <!-- Desktop Navbar -->
+
+    <ul class="desktop-navbar">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About Us</a></li>
+
+        <li class="relative group">
+            <a href="/services/">Services</a>
+            <ul class="desktop-dropdown">
+                <li><a href="#" class="desktop-dropdown-link">Plumbing
+                        Services</a></li>
+                <li><a href="" class="desktop-dropdown-link">Installation
+                        Services</a></li>
+                <li><a href="" class="desktop-dropdown-link">Specialized
+                        Plumbing Services</a></li>
+                <li><a href="" class="desktop-dropdown-link">Residential
+                        Services</a></li>
+                <li><a href="" class="desktop-dropdown-link">Commercial
+                        Plumbing Services</a></li>
+                <li><a href="" class="desktop-dropdown-link">Maintenance
+                        Services</a></li>
+            </ul>
+        </li>
+
+        <li class="relative group">
+            <a href="/service-areas/">Area Served</a>
+            <ul class="desktop-dropdown">
+                <li><a href="/service-areas/area1" class="desktop-dropdown-link">New York Metro
+                        Area</a></li>
+                <li><a href="/service-areas/area2" class="desktop-dropdown-link">Albany</a></li>
+                <li><a href="/service-areas/area3" class="desktop-dropdown-link">Yonkers</a>
+                </li>
+                <li><a href="/service-areas/area4" class="desktop-dropdown-link">Buffalo</a></li>
+                <li><a href="/service-areas/area5" class="desktop-dropdown-link">Syracuse</a>
+                </li>
+                <li><a href="/service-areas/area6" class="desktop-dropdown-link">Rochester</a>
+                </li>
+            </ul>
+        </li>
+
+        <li><a href="/blogs/">Blog</a></li>
+        <li><a href="/gallery/">Gallery</a></li>
+        <li><a href="/contact/">Contact Us</a></li>
+    </ul>
+
+    <div class="flex items-center space-x-4">
+        <div class="contact-number">Call : 800 555 284</div>
+        <a href="/contact/">
+            <button
+                class="bg-red-600 text-white px-4 py-2 rounded lg:block hidden transform transition duration-300 ease-in-out hover:bg-red-600 hover:scale-105 hover:shadow-lg btn-hidden">Book
+                Service</button>
+        </a>
+    </div>
+</nav>
+
+<!-- Mobile Dropdown Menu -->
+
+<div id="dropdown-menu" class="mobile-dropdown hidden">
+    <div class="dropdown-item"><a href="index.html" class="dropdown-item mobile-dropdown-list">Home</a></div>
+    <div class="dropdown-item"><a href="/about/" class="dropdown-item mobile-dropdown-list">About Us</a>
+    </div>
+    <div class="dropdown-item">
+        <a href="/services/" class="mobile-dropdown-list">Services ↓</a>
+        <!-- Submenu for services -->
+        <div class="ml-4 space-y-2 hidden" id="servicesDropdown">
+            <a href="#" class="block mobile-dropdown-list">Plumbing Services</a>
+            <a href="#" class="block mobile-dropdown-list">Installation Services</a>
+            <a href="#" class="block mobile-dropdown-list">Specialized Plumbing Services</a>
+            <a href="#" class="block mobile-dropdown-list">Residential Services</a>
+            <a href="#" class="block mobile-dropdown-list">Commercial Plumbing Services</a>
+            <a href="#" class="block mobile-dropdown-list">Maintenance Services</a>
+        </div>
+    </div>
+
+    <div class="dropdown-item">
+        <a href="/service-areas/" class="mobile-dropdown-list">Area Served ↓</a>
+        <!-- Submenu for area served -->
+        <div class="ml-4 space-y-2 hidden" id="areaServedDropdown">
+            <a href="/service-areas/area1" class="block mobile-dropdown-list">New York Metro Area</a>
+            <a href="/service-areas/area2" class="block mobile-dropdown-list">Albany</a>
+            <a href="/service-areas/area3" class="block mobile-dropdown-list">Yonkers</a>
+            <a href="/service-areas/area4" class="block mobile-dropdown-list">Buffalo</a>
+            <a href="/service-areas/area5" class="block mobile-dropdown-list">Syracuse</a>
+            <a href="/service-areas/area6" class="block mobile-dropdown-list">Rochester</a>
+        </div>
+    </div>
+
+    <div class="dropdown-item"><a href="/blogs/" class="dropdown-item mobile-dropdown-list">Blog</a></div>
+    <div class="dropdown-item"><a href="/gallery/" class="dropdown-item mobile-dropdown-list">Gallery</a>
+    </div>
+    <div class="dropdown-item"><a href="/contact/" class="dropdown-item mobile-dropdown-list">Contact
+            Us</a></div>
+
+    <div class="flex ">
+        <a href="/contact/">
+            <button
+                class="bg-red-700 text-white px-4 py-2 rounded transform transition duration-300 ease-in-out hover:bg-red-600 hover:scale-105 hover:shadow-lg">Book
+                Service</button>
+        </a>
+    </div>
+</div>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const menuToggle = document.getElementById('menu-toggle');
+        const dropdownMenu = document.getElementById('dropdown-menu');
+
+        if (menuToggle && dropdownMenu) {
+            menuToggle.addEventListener('click', (event) => {
+                event.stopPropagation();
+                console.log("Toggling dropdown visibility");
+                dropdownMenu.classList.toggle('hidden');
+                dropdownMenu.classList.toggle('block');
+            });
+
+            document.addEventListener('click', (event) => {
+                if (!dropdownMenu.contains(event.target) && event.target !== menuToggle) {
+                    dropdownMenu.classList.add('hidden');
+                    dropdownMenu.classList.remove('block');
+                }
+            });
+        }
+
+        // Toggle submenus for Services and Area Served
+        document.querySelectorAll('.dropdown-item > a').forEach(item => {
+            item.addEventListener('click', (event) => {
+                event.preventDefault();
+                const dropdown = item.nextElementSibling;
+                if (dropdown) {
+                    dropdown.classList.toggle('hidden');
+                }
+            });
+        });
+    });
+
+</script>
+
+    <main>
+        
+
+<div class="banner-container" style="height: 450px;">
+    <div class="banner-bg" style="background-image: url('/resources/assets/galleryBackground.png');">
+        <div class="banner-style"></div>
+        <div class="banner-Text">
+            <h1 class="bannerHeading">Gallery</h1>
+            <p class="mt-2">Delivering trusted plumbing solutions.</p>
+        </div>
+    </div>
+</div>
+
+<section class="gallery-section">
+    <div class="gallery-container">
+
+        <div class="gallery-cards group">
+            <img src="/resources/assets/galleryOne.png" alt="Repair Inspections & Testing" class="gallery-card-img" />
+            <div class="gallery-card-style">
+                <div class="gallery-card-details">
+                    <span class="gallery-card-title">Repair</span>
+                    <span class="text-lg">Inspections</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="gallery-cards group">
+            <img src="/resources/assets/galleryTwo.png" alt="Electrical Maintenance" class="gallery-card-img" />
+            <div class="gallery-card-style">
+                <div class="gallery-card-details">
+                    <span class="gallery-card-title">Electrical</span>
+                    <span class="text-lg">Maintenance</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="gallery-cards group">
+            <img src="/resources/assets/galleryThree.png" alt="Safety Testing" class="gallery-card-img" />
+            <div class="gallery-card-style">
+                <div class="gallery-card-details">
+                    <span class="gallery-card-title">Safety</span>
+                    <span class="text-lg">Testing</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="gallery-cards group">
+            <img src="/resources/assets/galleryFour.png" alt="Industrial Tools" class="gallery-card-img" />
+            <div class="gallery-card-style">
+                <div class="gallery-card-details">
+                    <span class="gallery-card-title">Industrial</span>
+                    <span class="text-lg">Tools</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="gallery-cards group">
+            <img src="/resources/assets/galleryFive.png" alt="Wiring Installation" class="gallery-card-img" />
+            <div class="gallery-card-style">
+                <div class="gallery-card-details">
+                    <span class="gallery-card-title">Wiring</span>
+                    <span class="text-lg">Installation</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="gallery-cards group">
+            <img src="/resources/assets/gallerySix.png" alt="High Voltage Safety" class="gallery-card-img" />
+            <div class="gallery-card-style">
+                <div class="gallery-card-details">
+                    <span class="gallery-card-title">High Voltage</span>
+                    <span class="text-lg">Safety</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    </main>
+
+    <!-- Footer Section -->
+    <!-- Map -->
+
+<div class="map-container" style="height: 450px;">
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387194.06217238074!2d-74.30932166836448!3d40.697019303516804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1731671011048!5m2!1sen!2sin"
+        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <div class="map-placeholder">
+        <i class="fa-solid fa-location-dot"></i>
+    </div>
+</div>
+
+<!-- Footer -->
+
+<div class="footer">
+    <div class="footer-container">
+        <div class="footer-style">
+            <div class="footer-logo">
+                <img src="resources/assets/logo.png" alt="Logo">
+                <p class="text-sm mt-2 ml-3 text-gray-400">ProHauz</p>
+            </div>
+
+            <div class="footer-icons">
+                <a href="#" aria-label="Facebook" class="footer-icons-style">
+                    <i class="fab fa-facebook-f text-2xl"></i>
+                </a>
+                <a href="#" aria-label="Twitter" class="footer-links-style">
+                    <i class="fab fa-twitter text-2xl"></i>
+                </a>
+                <a href="#" aria-label="Instagram" class="footer-links-style">
+                    <i class="fab fa-instagram text-2xl"></i>
+                </a>
+                <a href="#" aria-label="LinkedIn" class="footer-links-style">
+                    <i class="fab fa-linkedin-in text-2xl"></i>
+                </a>
+                <a href="#" aria-label="YouTube" class="footer-links-style">
+                    <i class="fab fa-youtube text-2xl"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-links">
+            <div class="links-alignment">
+                <a href="index.html">Home</a>
+                <a href="./pages/contactUs.html">Contact us</a>
+                <a href="./pages/aboutUs.html">About Us</a>
+                <a href="./pages/areaServed.html">Area Served</a>
+                <a href="./pages/ourservices.html">Services</a>
+                <a href="./pages/blog.html">Blog</a>
+                <a href="./pages/sitemap.html">Sitemap</a>
+                <a href="./pages/gallery.html">Gallery</a>
+            </div>
+        </div>
+
+        <div class="footer-payment-modes">
+            <div class="w-full flex justify-center space-x-4">
+                <a href=""><img src="resources/assets/visa.png" alt="Visa"></a>
+                <a href=""><img src="resources/assets/american-express.png" alt="American Express"></a>
+                <a href=""><img src="resources/assets/card.png" alt="MasterCard"></a>
+                <a href=""> <img src="resources/assets/discover.png" alt="Discover"></a>
+                <a href=""><img src="resources/assets/money.png" alt="Cash"></a>
+                <a href=""> <img src="resources/assets/checkbook.png" alt="Check"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="text-center text-m text-white bg-blue-500 py-5">
+    <p>Copyright © 2024 by Company. All Rights Reserved.</p>
+    <a href="/privacy-policy/">Privacy & Policy</a>
+    <a href="/terms-and-conditions/" class="ml-3">Terms & Conditions</a>
+</div>
+
+    <script src="/resources/scripts/app.js"></script>
+
+</body>
+
+</html>
