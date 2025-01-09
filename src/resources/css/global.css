@@ -19,12 +19,17 @@
     @apply lg:flex space-x-6 ml-12 text-lg text-white hidden;
 }
 
-.desktop-dropdown {
-    @apply absolute hidden group-hover:block bg-black shadow-lg mt-0 text-sm w-52 text-center;
+.desktop-navbar li a {
+    @apply hover:font-bold hover:border-b-2 hover:border-blue-500 transition duration-700 ease-in-out;
 }
 
+.desktop-dropdown {
+    @apply absolute hidden group-hover:block bg-gray-200 shadow-lg mt-0 text-base w-52 text-center;
+}
+
+
 .desktop-dropdown-link {
-    @apply block px-4 py-2 hover:bg-gray-200 hover:text-primary hover:font-bold pt-3 pb-3;
+    @apply block px-4 py-2 hover:bg-gray-200 hover:text-primary hover:font-bold pt-3 pb-3 text-black;
 }
 
 
@@ -36,7 +41,11 @@
 /* Mobile Dropdown */
 
 .mobile-dropdown {
-    @apply fixed lg:hidden bg-blue-800 text-lg py-8 px-8 w-1/2 mt-0 shadow-xl mt-20 right-0 top-0 h-full transform transition-transform duration-300 ease-in-out;
+    @apply fixed lg:hidden bg-black text-lg py-8 px-8 w-1/2 mt-0 shadow-xl right-0 top-0 h-full transform transition-transform duration-300 ease-in-out mt-28;
+    z-index: 99999;
+    top: 0;
+    right: 0;
+    overflow: visible;
 }
 
 .mobile-dropdown.show {
@@ -48,17 +57,20 @@
 }
 
 #dropdown-menu {
-    @apply flex flex-wrap gap-2 items-center;
-    flex-direction: row;
+    @apply flex flex-col gap-2 items-start mt-28;
+    flex-direction: column;
 }
 
 .dropdown-item {
-    @apply flex-none;
+    @apply flex-none mt-3;
 }
 
 .mobile-dropdown-list {
-    @apply inline-block px-2 py-2 text-white text-lg;
+    @apply px-2 py-2 text-white text-lg hover:font-bold relative;
+    transition: all 0.3s ease-in-out;
 }
+
+
 
 /* Hero Section */
 
@@ -229,7 +241,7 @@
     }
 }
 
-/* Plumbing Care Section */
+/* Plumbing Care Section Home Page */
 
 .plumbing-care-section {
     @apply flex flex-col md:flex-row items-center justify-center text-center md:text-left min-h-[80vh] relative bg-cover bg-center;
@@ -241,7 +253,7 @@
 }
 
 .care-bg-overlay {
-    @apply absolute top-0 left-0 w-full h-full bg-blue-600/75 z-0 opacity-80;
+    @apply absolute top-0 left-0 w-full h-full bg-black/100 z-0 opacity-80;
 }
 
 .title-header {
@@ -255,7 +267,7 @@
 }
 
 .care-main-content {
-    @apply flex flex-col justify-center items-center bg-black/60 p-5 md:p-8 mt-28 sm:mt-36 md:mt-0 z-10 w-full min-h-[80vh];
+    @apply flex flex-col justify-center items-center bg-black/100 p-5 mt-32 w-full;
 }
 
 .care-heading {
@@ -286,11 +298,11 @@
 /* Blog Cards */
 
 .blog-section {
-    @apply cards-section flex flex-col items-center justify-center text-white relative md:pt-28 pt-80 pb-16 bg-cover bg-center;
+    @apply cards-section flex flex-col items-center justify-center text-white relative pb-16 bg-cover bg-center md:pt-80 pt-96;
 }
 
 .blog-cards-container {
-    @apply flex flex-col md:flex-row gap-6 relative z-40 px-4 sm:px-6 lg:px-8 mx-2 sm:mx-4 lg:mx-8;
+    @apply flex flex-col md:flex-row gap-6 relative px-4 sm:px-6 lg:px-8 mx-2 sm:mx-4 lg:mx-8;
 }
 
 .blog-cards {
@@ -367,7 +379,7 @@
 }
 
 .arrow-icon {
-    @apply text-black text-5xl transform transition-transform duration-300 hover:text-white hover:scale-110;
+    @apply text-white text-5xl transform transition-transform duration-300 hover:scale-110;
 }
 
 
@@ -610,18 +622,23 @@
     @apply grid grid-cols-2 gap-4;
 }
 
+.links-alignment a {
+    @apply hover:text-primary;
+}
+
 .footer-payment-modes {
     @apply md:w-1/3 flex justify-center md:justify-end;
 }
 
 .footer-payment-modes a {
-    @apply h-12;
+    @apply h-12 hover:scale-105;
 }
 
 /* Banner */
 
 .banner-container {
     @apply flex items-center justify-center mt-28;
+
 }
 
 .banner-bg {
@@ -643,7 +660,7 @@
 /* --------ABOUT PAGE STYLING--------- */
 
 .exp-section {
-    @apply flex flex-col md:flex-row h-auto items-center justify-center pt-6 bg-white py-6 px-6 md:px-16 lg:px-24 space-y-8 md:space-y-0 md:space-x-16 bg-blue-100 ;
+    @apply bg-blue-100 flex flex-col md:flex-row h-auto items-center justify-center py-0 px-0 bg-blue-100 mb-0 pb-0 md:px-16 lg:px-24 md:space-y-0 md:space-x-16 space-y-0 gap-y-0;
 }
 
 .expImg {
@@ -663,11 +680,11 @@
 }
 
 .ceo-img {
-    @apply flex-1 md:order-2 mb-6 md:mb-0;
+    @apply flex-1 md:order-2 md:mb-0 mb-0;
 }
 
 .ceo-img img {
-    @apply h-[22rem] w-auto md:h-[33rem] md:w-[22rem] mx-auto;
+    @apply h-[22rem] w-auto md:h-[34rem] md:w-[22rem] mx-auto mb-0;
 
 }
 
@@ -682,11 +699,11 @@
     }
 
     .ceo-img img {
-        @apply h-[20rem] w-auto; 
+        @apply h-[20rem] w-auto;
     }
 
     .ceo-img {
-        @apply mb-4 justify-center text-center;
+        @apply mb-0 justify-center text-center;
     }
 }
 
@@ -698,25 +715,25 @@
 }
 
 .counter-num {
-    @apply text-4xl md:text-5xl font-bold text-white ;
+    @apply text-4xl md:text-5xl font-bold text-white;
 }
 
 .counter-name {
     @apply text-white font-bold text-lg mt-2;
-} 
+}
 
 
 /* Why Choose Us */
-.why-choose-us {
+.why-choose-us-container {
     @apply flex flex-col md:flex-row items-center justify-center bg-white pt-3 md:px-16 lg:px-24 space-y-8 md:space-y-0 md:space-x-8;
 }
 
 .why-us-img {
-    @apply max-w-[460px] max-h-[400px] mx-auto lg:max-w-[400px] lg:max-h-[450px];
+    @apply max-w-[460px] max-h-[500px] mx-auto lg:max-w-[400px] lg:max-h-[550px];
 }
 
-.why-choose-us-container {
-    @apply flex-1 w-full md:w-1/2 space-y-6 pt-5 md:pr-20 pl-6 pr-5 ;
+.why-us-container {
+    @apply flex-1 w-full md:w-1/2 space-y-6 pt-5 md:pr-20 pl-6 pr-5 mb-0;
 }
 
 .whyus-heading {
@@ -728,28 +745,27 @@
 }
 
 .btn-whyus {
-    @apply bg-btnColor text-white px-4 py-2 rounded lg:block hidden transform transition duration-300 ease-in-out hover:bg-red-600 hover:scale-105 hover:shadow-lg ;
+    @apply bg-btnColor text-white px-4 py-2 rounded lg:block hidden transform transition duration-300 ease-in-out hover:bg-red-600 hover:scale-105 hover:shadow-lg;
 }
-
 
 /* What we do section */
 
 .progress-container {
-    @apply relative w-32 h-32 flex items-center justify-center ;
-  }
-  
-  .svg-circle {
+    @apply relative w-32 h-32 flex items-center justify-center;
+}
+
+.svg-circle {
     transform: rotate(-90deg);
     transform-origin: 50% 50%;
-  }
-  
-  .whatwedo-section {
-    @apply bg-cover bg-center bg-no-repeat bg-fixed mb-16;
-  }
+}
 
-  .whatwedo-container {
+.whatwedo-section {
+    @apply bg-cover bg-center bg-no-repeat bg-fixed mb-16;
+}
+
+.whatwedo-container {
     @apply bg-black bg-opacity-60 h-full flex items-center justify-center;
-  }
+}
 
 .wwd-heading-style {
     @apply w-full max-w-7xl px-4 text-center text-white;
@@ -801,7 +817,7 @@
     @apply text-lg font-semibold mb-1;
 }
 
-.visit-text{
+.visit-text {
     @apply text-gray-600 text-sm;
 }
 
@@ -835,7 +851,7 @@
     @apply relative overflow-hidden shadow-lg;
 }
 
-.gallery-card-img{
+.gallery-card-img {
     @apply w-full h-96 object-cover transition-transform duration-500 group-hover:scale-105;
 }
 
@@ -844,10 +860,10 @@
 }
 
 .gallery-card-details {
-    @apply  text-white w-40 h-40 flex flex-col items-center justify-center rounded-md;
+    @apply text-white w-40 h-40 flex flex-col items-center justify-center rounded-md;
 }
 
-.gallery-card-title{
+.gallery-card-title {
     @apply text-2xl font-bold;
 }
 
@@ -855,7 +871,7 @@
 /* --------- SERVICES PAGE STYLING ----------- */
 
 .our-priority-section {
-    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 ;
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16;
 }
 
 .our-priority-heading {
@@ -888,7 +904,7 @@
 
 /* service cards section */
 
-.service-cards-section{
+.service-cards-section {
     @apply py-12 mt-2 md:ml-20 md:mr-20 md:mb-20;
 }
 
@@ -900,8 +916,8 @@
     @apply flex flex-wrap justify-center gap-6 p-4;
 }
 
-.bg-cards{
-    @apply max-w-sm bg-white overflow-hidden bg-gray-100 flex flex-col;
+.bg-cards {
+    @apply max-w-sm bg-white overflow-hidden bg-gray-100 flex flex-col hover:scale-105 hover:bg-blue-400;
 }
 
 .service-titles {
@@ -913,10 +929,10 @@
 }
 
 .service-description {
-    @apply text-gray-600;
+    @apply text-gray-700 text-base;
 }
 
-.service-link {
+.services-links {
     @apply text-blue-600 font-semibold hover:underline;
 }
 
@@ -937,11 +953,11 @@
     @apply w-full h-48 object-cover;
 }
 
-.blog-texts{
+.blog-texts {
     @apply p-4 flex-grow flex flex-col;
 }
 
-.blog-titles{
+.blog-titles {
     @apply text-lg font-semibold text-gray-800 mt-2 group-hover:text-blue-500;
 }
 
@@ -979,7 +995,8 @@
     @apply text-base leading-7;
 }
 
-/* ----------- Area Page ------------ */
+/* ----------- Area Served Pages ------------ */
+
 .areas-container {
     @apply container mx-auto py-10 px-4 lg:px-8 mt-10 mb-10 pt-0 md:pt-5;
 }
@@ -1004,8 +1021,8 @@
     @apply block px-4 py-3 bg-blue-100 text-blue-600 font-medium hover:bg-blue-200;
 }
 
-.contact-block{
-    @apply bg-black text-white p-6 shadow-md flex items-center;
+.contact-block {
+    @apply bg-black text-white p-6 shadow-sm flex items-center;
 }
 
 .area-info {
@@ -1013,53 +1030,261 @@
 }
 
 .info-container {
-    @apply relative overflow-hidden shadow-lg;
+    @apply relative overflow-hidden;
 }
 
 .area-info-text {
-    @apply mt-5 p-6 bg-white shadow-lg;
+    @apply mt-5 p-2 bg-white text-gray-800 text-sm;
+}
+
+.area-info-text p {
+    @apply text-base;
 }
 
 /* Services Pages */
 
-/* Define reusable utility classes using @apply */
 .service-card {
-    @apply bg-gray-50 shadow-lg rounded-lg p-6 border-l-4 border-blue-600;
-  }
-  
-  .service-heading {
+    @apply bg-gray-50 shadow-lg p-6 border-l-4 border-blue-600;
+}
+
+.service-heading {
     @apply text-lg font-bold text-gray-800 mb-4;
-  }
-  
-  .service-link {
-    @apply block px-4 py-3 bg-blue-100 text-blue-700 font-medium rounded-lg hover:bg-blue-200;
-  }
-  
-  .contact-card {
-    @apply bg-black text-white rounded-lg p-6 shadow-lg flex items-center;
-  }
-  
-  .carousel-container {
-    @apply relative w-full overflow-hidden rounded-lg mt-6;
-  }
-  
-  .carousel-button {
-    @apply absolute top-1/2 -translate-y-1/2 bg-gray-800 text-white font-bold rounded p-2 focus:outline-none;
-  }
-  
-  .main-content {
-    @apply lg:col-span-2 bg-white p-5 pt-0 text-gray-600;
-  }
-  
-  .section-title {
+}
+
+.service-link {
+    @apply block px-4 py-3 bg-blue-100 text-blue-700 font-medium hover:bg-blue-200;
+}
+
+.contact-card {
+    @apply bg-black text-white p-6 shadow-lg flex items-center;
+}
+
+.carousel-container {
+    @apply relative w-full overflow-hidden rounded-lg mt-0 md:pt-2 pt-0;
+}
+
+.carousel-dot {
+    @apply w-4 h-4 rounded-full bg-gray-400 transition-colors;
+}
+
+.carousel-dot.active {
+    @apply bg-blue-600;
+}
+
+.main-content {
+    @apply lg:col-span-2 bg-white p-5 pt-0 text-gray-600 !important;
+}
+
+.section-title {
     @apply text-2xl font-semibold mt-8;
-  }
-  
-  .icon-container {
+}
+
+.icon-container {
     @apply flex items-start space-x-4 mt-6;
-  }
-  
-  .icon-text {
+}
+
+.icon-text {
     @apply text-gray-600;
-  }
-  
+}
+
+
+/* Servives Description Pages Styling */
+
+.service-content {
+    margin: 0 20px;
+    color: black;
+}
+
+.service-content h1 {
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.service-content p {
+    margin-bottom: 20px;
+    color: #3a3e45;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+
+.service-content h3 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/* Area Served Information Page */
+
+.area-description {
+    margin-top: 40px;
+}
+
+.area-description h1 {
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.area-description p {
+    margin-bottom: 20px;
+    color: #3a3e45;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.area-description h2 {
+    font-size: 28px;
+    margin-top: 30px;
+    font-weight: 500;
+}
+
+
+/* Blog Description Page Styling */
+
+.blog-description-container {
+    @apply container mx-auto px-4 py-8 mt-10;
+}
+
+.blog-grid {
+    @apply grid grid-cols-1 md:grid-cols-3 gap-10;
+}
+
+.blog-image {
+    @apply transform transition-transform duration-300 hover:scale-95;
+}
+
+.blog-information {
+    @apply text-sm flex items-center space-x-6 mb-4;
+}
+
+.user-icon {
+    @apply text-blue-600 hover:text-blue-800 transition mr-2;
+}
+
+.icon-heading {
+    @apply text-gray-600;
+}
+
+.blog-description-text {
+    @apply text-gray-800 mt-2 text-base;
+}
+
+.blog-img2 {
+    @apply object-cover transform transition-transform duration-300 hover:scale-95;
+}
+
+.blog-subheading {
+    @apply text-2xl font-bold mt-2;
+}
+
+.blog-subheading-text {
+    @apply text-gray-800 mt-4 text-base;
+}
+
+.horizontal-divide-line {
+    @apply my-6 border-t-2 border-gray-300 mt-20;
+}
+
+.blog-search {
+    @apply w-full px-4 py-2 border focus:outline-none focus:ring focus:ring-blue-300;
+}
+
+.recent-post-heading {
+    @apply text-lg font-bold mb-4 mt-5;
+}
+
+.recent-blog-posts {
+    @apply flex items-center space-x-4;
+}
+
+.recent-blog-img {
+    @apply w-16 h-16 object-cover;
+}
+
+.recent-blog-title {
+    @apply text-gray-800 hover:text-blue-600 font-medium;
+}
+
+.leave-reply-container {
+    @apply container mx-auto mt-0 p-6 flex justify-start pl-0 mb-20;
+}
+
+.leave-reply-heading {
+    @apply text-2xl font-bold mb-2;
+}
+
+.your-msg-placeholder {
+    @apply w-full h-40 p-4 bg-gray-100 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+.reply-grid {
+    @apply grid grid-cols-1 md:grid-cols-3 gap-4 mt-4;
+}
+
+.reply-form-fields {
+    @apply w-full p-3 bg-gray-100 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+.submit-btn {
+    @apply mt-6 px-6 py-3 bg-red-600 text-white font-semibold rounded-md hover:bg-red-700 transition duration-300 hover:scale-105 hover:shadow-lg;
+}
+
+.blog-content h1 {
+    font-size: 32px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.blog-content p {
+    margin-bottom: 20px;
+    color: #3a3e45;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.blog-content h2 {
+    font-size: 28px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.blog-content * {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* HTML Sitemap */
+
+.sitemap {
+    @apply text-white py-4 mt-20 mb-10;
+}
+
+.sitemap-container {
+    @apply container mx-auto px-4 text-center;
+}
+
+.sitemap-heading {
+    @apply text-4xl text-blue-500 font-bold mt-12;
+}
+
+.sitemap-sub-text {
+    @apply text-base text-black mt-3;
+}
+
+.sitemap-grid {
+    @apply grid grid-cols-1 md:grid-cols-4 gap-8;
+}
+
+.grid-links-heading {
+    @apply text-lg font-bold mb-4;
+}
+
+.grid-links {
+    @apply text-blue-600 hover:underline;
+}

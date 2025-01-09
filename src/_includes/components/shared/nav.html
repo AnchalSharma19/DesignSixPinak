@@ -1,12 +1,13 @@
 <nav class="nav-container">
     <a href="{{ '/' | url }}">
         <div class="logo">
-            <img src="resources/assets/logo.png" alt="Logo" class="h-16 w-16 mr-1">
+            <img src="{{companyLogo}}" alt="Logo" class="h-16 w-16 mr-1">
             <div class="logo-text">{{businessInfo.businessName}}</div>
         </div>
     </a>
 
-    <div class="lg:hidden absolute right-6 hamburger-menu">
+    <!-- Hamburger Menu  -->
+    <div class="absolute right-6 hamburger-menu xl:hidden">
         <button id="menu-toggle" class="text-white">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
@@ -15,43 +16,37 @@
         </button>
     </div>
 
-    <!-- Desktop Navbar -->
-
-    <ul class="desktop-navbar">
+    <ul class="desktop-navbar hidden xl:flex">
         <li><a href="{{ '/' | url }}">Home</a></li>
         <li><a href="{{ '/about/' | url }}">About Us</a></li>
 
         <li class="relative group">
             <a href="{{ '/services/' | url }}">Services</a>
             <ul class="desktop-dropdown">
-                <li><a href="{{ '/services/service1' | url }}" class="desktop-dropdown-link">Plumbing
+                <li><a href="{{ '/services/service1' | url }}" class="desktop-dropdown-link">Plumbing Services</a></li>
+                <li><a href="{{ '/services/service2' | url }}" class="desktop-dropdown-link">Installation Services</a>
+                </li>
+                <li><a href="{{ '/services/service3' | url }}" class="desktop-dropdown-link">Specialized Plumbing
                         Services</a></li>
-                <li><a href="{{ '/services/service2' | url }}" class="desktop-dropdown-link">Installation
+                <li><a href="{{ '/services/service4' | url }}" class="desktop-dropdown-link">Residential Services</a>
+                </li>
+                <li><a href="{{ '/services/service5' | url }}" class="desktop-dropdown-link">Commercial Plumbing
                         Services</a></li>
-                <li><a href="{{ '/services/service3' | url }}" class="desktop-dropdown-link">Specialized
-                        Plumbing Services</a></li>
-                <li><a href="{{ '/services/service4' | url }}" class="desktop-dropdown-link">Residential
-                        Services</a></li>
-                <li><a href="{{ '/services/service5' | url }}" class="desktop-dropdown-link">Commercial
-                        Plumbing Services</a></li>
-                <li><a href="{{ '/services/service6' | url }}" class="desktop-dropdown-link">Maintenance
-                        Services</a></li>
+                <li><a href="{{ '/services/service6' | url }}" class="desktop-dropdown-link">Maintenance Services</a>
+                </li>
             </ul>
         </li>
 
         <li class="relative group">
             <a href="{{ '/service-areas/' | url }}">Area Served</a>
             <ul class="desktop-dropdown">
-                <li><a href="{{ '/service-areas/area1' | url }}" class="desktop-dropdown-link">New York Metro
-                        Area</a></li>
+                <li><a href="{{ '/service-areas/area1' | url }}" class="desktop-dropdown-link">New York Metro Area</a>
+                </li>
                 <li><a href="{{ '/service-areas/area2' | url }}" class="desktop-dropdown-link">Albany</a></li>
-                <li><a href="{{ '/service-areas/area3' | url }}" class="desktop-dropdown-link">Yonkers</a>
-                </li>
+                <li><a href="{{ '/service-areas/area3' | url }}" class="desktop-dropdown-link">Yonkers</a></li>
                 <li><a href="{{ '/service-areas/area4' | url }}" class="desktop-dropdown-link">Buffalo</a></li>
-                <li><a href="{{ '/service-areas/area5' | url }}" class="desktop-dropdown-link">Syracuse</a>
-                </li>
-                <li><a href="{{ '/service-areas/area6' | url }}" class="desktop-dropdown-link">Rochester</a>
-                </li>
+                <li><a href="{{ '/service-areas/area5' | url }}" class="desktop-dropdown-link">Syracuse</a></li>
+                <li><a href="{{ '/service-areas/area6' | url }}" class="desktop-dropdown-link">Rochester</a></li>
             </ul>
         </li>
 
@@ -60,11 +55,10 @@
         <li><a href="{{ '/contact/' | url }}">Contact Us</a></li>
     </ul>
 
-    <div class="flex items-center space-x-4">
+    <div class="flex items-center space-x-4 hidden xl:flex">
         <div class="contact-number">Call : {{businessInfo.businessPhone}}</div>
         <a href="{{ '/contact/' | url }}">
-            <button class="btn-red p-3 font-normal text-base">Book
-                Service</button>
+            <button class="btn-red p-3 text-base">Book Service</button>
         </a>
     </div>
 </nav>
@@ -72,25 +66,28 @@
 <!-- Mobile Dropdown Menu -->
 
 <div id="dropdown-menu" class="mobile-dropdown hidden">
-    <div class="dropdown-item"><a href="index.html" class="dropdown-item mobile-dropdown-list">Home</a></div>
-    <div class="dropdown-item"><a href="{{ '/about/' | url }}" class="dropdown-item mobile-dropdown-list">About Us</a>
+    <div class="dropdown-item"><a href="{{ '/' | url }}" class="dropdown-item mobile-dropdown-list">Home</a></div>
+    <div class="dropdown-item"><a href="/about/" class="dropdown-item mobile-dropdown-list">About
+            Us</a>
     </div>
     <div class="dropdown-item">
-        <a href="{{ '/services/' | url }}" class="mobile-dropdown-list">Services ↓</a>
-        <!-- Submenu for services -->
+        <a href="{{ '/services/' | url }}" class="mobile-dropdown-list">Services <i class="fa-solid fa-arrow-down"
+                style="color: #ffffff;"></i></a>
         <div class="ml-4 space-y-2 hidden" id="servicesDropdown">
-            <a href="#" class="block mobile-dropdown-list">Plumbing Services</a>
-            <a href="#" class="block mobile-dropdown-list">Installation Services</a>
-            <a href="#" class="block mobile-dropdown-list">Specialized Plumbing Services</a>
-            <a href="#" class="block mobile-dropdown-list">Residential Services</a>
-            <a href="#" class="block mobile-dropdown-list">Commercial Plumbing Services</a>
-            <a href="#" class="block mobile-dropdown-list">Maintenance Services</a>
+            <a href="{{ '/services/service1' | url }}" class="block mobile-dropdown-list">Plumbing Services</a>
+            <a href="{{ '/services/service2' | url }}" class="block mobile-dropdown-list">Installation Services</a>
+            <a href="{{ '/services/service3' | url }}" class="block mobile-dropdown-list">Specialized Plumbing
+                Services</a>
+            <a href="{{ '/services/service4' | url }}" class="block mobile-dropdown-list">Residential Services</a>
+            <a href="{{ '/services/service5' | url }}" class="block mobile-dropdown-list">Commercial Plumbing
+                Services</a>
+            <a href="{{ '/services/service6' | url }}" class="block mobile-dropdown-list">Maintenance Services</a>
         </div>
     </div>
 
     <div class="dropdown-item">
-        <a href="{{ '/service-areas/' | url }}" class="mobile-dropdown-list">Area Served ↓</a>
-        <!-- Submenu for area served -->
+        <a href="{{ '/service-areas/' | url }}" class="mobile-dropdown-list">Area Served <i
+                class="fa-solid fa-arrow-down" style="color: #ffffff;"></i></a>
         <div class="ml-4 space-y-2 hidden" id="areaServedDropdown">
             <a href="{{ '/service-areas/area1' | url }}" class="block mobile-dropdown-list">New York Metro Area</a>
             <a href="{{ '/service-areas/area2' | url }}" class="block mobile-dropdown-list">Albany</a>
@@ -107,7 +104,7 @@
     <div class="dropdown-item"><a href="{{ '/contact/' | url }}" class="dropdown-item mobile-dropdown-list">Contact
             Us</a></div>
 
-    <div class="flex ">
+    <div class="flex mt-5">
         <a href="{{ '/contact/' | url }}">
             <button
                 class="bg-red-700 text-white px-4 py-2 rounded transform transition duration-300 ease-in-out hover:bg-red-600 hover:scale-105 hover:shadow-lg">Book
@@ -118,6 +115,7 @@
 
 
 <script>
+
     document.addEventListener('DOMContentLoaded', () => {
         const menuToggle = document.getElementById('menu-toggle');
         const dropdownMenu = document.getElementById('dropdown-menu');
@@ -125,7 +123,6 @@
         if (menuToggle && dropdownMenu) {
             menuToggle.addEventListener('click', (event) => {
                 event.stopPropagation();
-                console.log("Toggling dropdown visibility");
                 dropdownMenu.classList.toggle('hidden');
                 dropdownMenu.classList.toggle('block');
             });
@@ -138,16 +135,25 @@
             });
         }
 
-        // Toggle submenus for Services and Area Served
-        document.querySelectorAll('.dropdown-item > a').forEach(item => {
-            item.addEventListener('click', (event) => {
-                event.preventDefault();
-                const dropdown = item.nextElementSibling;
-                if (dropdown) {
+        document.querySelectorAll('.dropdown-item > a').forEach(link => {
+            const dropdown = link.nextElementSibling;
+            const arrowIcon = link.querySelector('i');
+
+            if (arrowIcon && dropdown) {
+                arrowIcon.addEventListener('click', (event) => {
+                    event.preventDefault();
                     dropdown.classList.toggle('hidden');
+                });
+            }
+
+
+            link.addEventListener('click', (event) => {
+                if (event.target !== arrowIcon && dropdown) {
+                    return;
                 }
             });
         });
     });
+
 
 </script>

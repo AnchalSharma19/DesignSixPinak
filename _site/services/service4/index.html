@@ -98,12 +98,13 @@
     <nav class="nav-container">
     <a href="/">
         <div class="logo">
-            <img src="resources/assets/logo.png" alt="Logo" class="h-16 w-16 mr-1">
+            <img src="/resources/assets/logo.png" alt="Logo" class="h-16 w-16 mr-1">
             <div class="logo-text">ProHauz</div>
         </div>
     </a>
 
-    <div class="lg:hidden absolute right-6 hamburger-menu">
+    <!-- Hamburger Menu  -->
+    <div class="absolute right-6 hamburger-menu xl:hidden">
         <button id="menu-toggle" class="text-white">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
@@ -112,43 +113,37 @@
         </button>
     </div>
 
-    <!-- Desktop Navbar -->
-
-    <ul class="desktop-navbar">
+    <ul class="desktop-navbar hidden xl:flex">
         <li><a href="/">Home</a></li>
         <li><a href="/about/">About Us</a></li>
 
         <li class="relative group">
             <a href="/services/">Services</a>
             <ul class="desktop-dropdown">
-                <li><a href="/services/service1" class="desktop-dropdown-link">Plumbing
+                <li><a href="/services/service1" class="desktop-dropdown-link">Plumbing Services</a></li>
+                <li><a href="/services/service2" class="desktop-dropdown-link">Installation Services</a>
+                </li>
+                <li><a href="/services/service3" class="desktop-dropdown-link">Specialized Plumbing
                         Services</a></li>
-                <li><a href="/services/service2" class="desktop-dropdown-link">Installation
+                <li><a href="/services/service4" class="desktop-dropdown-link">Residential Services</a>
+                </li>
+                <li><a href="/services/service5" class="desktop-dropdown-link">Commercial Plumbing
                         Services</a></li>
-                <li><a href="/services/service3" class="desktop-dropdown-link">Specialized
-                        Plumbing Services</a></li>
-                <li><a href="/services/service4" class="desktop-dropdown-link">Residential
-                        Services</a></li>
-                <li><a href="/services/service5" class="desktop-dropdown-link">Commercial
-                        Plumbing Services</a></li>
-                <li><a href="/services/service6" class="desktop-dropdown-link">Maintenance
-                        Services</a></li>
+                <li><a href="/services/service6" class="desktop-dropdown-link">Maintenance Services</a>
+                </li>
             </ul>
         </li>
 
         <li class="relative group">
             <a href="/service-areas/">Area Served</a>
             <ul class="desktop-dropdown">
-                <li><a href="/service-areas/area1" class="desktop-dropdown-link">New York Metro
-                        Area</a></li>
+                <li><a href="/service-areas/area1" class="desktop-dropdown-link">New York Metro Area</a>
+                </li>
                 <li><a href="/service-areas/area2" class="desktop-dropdown-link">Albany</a></li>
-                <li><a href="/service-areas/area3" class="desktop-dropdown-link">Yonkers</a>
-                </li>
+                <li><a href="/service-areas/area3" class="desktop-dropdown-link">Yonkers</a></li>
                 <li><a href="/service-areas/area4" class="desktop-dropdown-link">Buffalo</a></li>
-                <li><a href="/service-areas/area5" class="desktop-dropdown-link">Syracuse</a>
-                </li>
-                <li><a href="/service-areas/area6" class="desktop-dropdown-link">Rochester</a>
-                </li>
+                <li><a href="/service-areas/area5" class="desktop-dropdown-link">Syracuse</a></li>
+                <li><a href="/service-areas/area6" class="desktop-dropdown-link">Rochester</a></li>
             </ul>
         </li>
 
@@ -157,11 +152,10 @@
         <li><a href="/contact/">Contact Us</a></li>
     </ul>
 
-    <div class="flex items-center space-x-4">
+    <div class="flex items-center space-x-4 hidden xl:flex">
         <div class="contact-number">Call : 800 555 284</div>
         <a href="/contact/">
-            <button class="btn-red p-3 font-normal text-base">Book
-                Service</button>
+            <button class="btn-red p-3 text-base">Book Service</button>
         </a>
     </div>
 </nav>
@@ -169,25 +163,28 @@
 <!-- Mobile Dropdown Menu -->
 
 <div id="dropdown-menu" class="mobile-dropdown hidden">
-    <div class="dropdown-item"><a href="index.html" class="dropdown-item mobile-dropdown-list">Home</a></div>
-    <div class="dropdown-item"><a href="/about/" class="dropdown-item mobile-dropdown-list">About Us</a>
+    <div class="dropdown-item"><a href="/" class="dropdown-item mobile-dropdown-list">Home</a></div>
+    <div class="dropdown-item"><a href="/about/" class="dropdown-item mobile-dropdown-list">About
+            Us</a>
     </div>
     <div class="dropdown-item">
-        <a href="/services/" class="mobile-dropdown-list">Services ↓</a>
-        <!-- Submenu for services -->
+        <a href="/services/" class="mobile-dropdown-list">Services <i class="fa-solid fa-arrow-down"
+                style="color: #ffffff;"></i></a>
         <div class="ml-4 space-y-2 hidden" id="servicesDropdown">
-            <a href="#" class="block mobile-dropdown-list">Plumbing Services</a>
-            <a href="#" class="block mobile-dropdown-list">Installation Services</a>
-            <a href="#" class="block mobile-dropdown-list">Specialized Plumbing Services</a>
-            <a href="#" class="block mobile-dropdown-list">Residential Services</a>
-            <a href="#" class="block mobile-dropdown-list">Commercial Plumbing Services</a>
-            <a href="#" class="block mobile-dropdown-list">Maintenance Services</a>
+            <a href="/services/service1" class="block mobile-dropdown-list">Plumbing Services</a>
+            <a href="/services/service2" class="block mobile-dropdown-list">Installation Services</a>
+            <a href="/services/service3" class="block mobile-dropdown-list">Specialized Plumbing
+                Services</a>
+            <a href="/services/service4" class="block mobile-dropdown-list">Residential Services</a>
+            <a href="/services/service5" class="block mobile-dropdown-list">Commercial Plumbing
+                Services</a>
+            <a href="/services/service6" class="block mobile-dropdown-list">Maintenance Services</a>
         </div>
     </div>
 
     <div class="dropdown-item">
-        <a href="/service-areas/" class="mobile-dropdown-list">Area Served ↓</a>
-        <!-- Submenu for area served -->
+        <a href="/service-areas/" class="mobile-dropdown-list">Area Served <i
+                class="fa-solid fa-arrow-down" style="color: #ffffff;"></i></a>
         <div class="ml-4 space-y-2 hidden" id="areaServedDropdown">
             <a href="/service-areas/area1" class="block mobile-dropdown-list">New York Metro Area</a>
             <a href="/service-areas/area2" class="block mobile-dropdown-list">Albany</a>
@@ -204,7 +201,7 @@
     <div class="dropdown-item"><a href="/contact/" class="dropdown-item mobile-dropdown-list">Contact
             Us</a></div>
 
-    <div class="flex ">
+    <div class="flex mt-5">
         <a href="/contact/">
             <button
                 class="bg-red-700 text-white px-4 py-2 rounded transform transition duration-300 ease-in-out hover:bg-red-600 hover:scale-105 hover:shadow-lg">Book
@@ -215,6 +212,7 @@
 
 
 <script>
+
     document.addEventListener('DOMContentLoaded', () => {
         const menuToggle = document.getElementById('menu-toggle');
         const dropdownMenu = document.getElementById('dropdown-menu');
@@ -222,7 +220,6 @@
         if (menuToggle && dropdownMenu) {
             menuToggle.addEventListener('click', (event) => {
                 event.stopPropagation();
-                console.log("Toggling dropdown visibility");
                 dropdownMenu.classList.toggle('hidden');
                 dropdownMenu.classList.toggle('block');
             });
@@ -235,17 +232,26 @@
             });
         }
 
-        // Toggle submenus for Services and Area Served
-        document.querySelectorAll('.dropdown-item > a').forEach(item => {
-            item.addEventListener('click', (event) => {
-                event.preventDefault();
-                const dropdown = item.nextElementSibling;
-                if (dropdown) {
+        document.querySelectorAll('.dropdown-item > a').forEach(link => {
+            const dropdown = link.nextElementSibling;
+            const arrowIcon = link.querySelector('i');
+
+            if (arrowIcon && dropdown) {
+                arrowIcon.addEventListener('click', (event) => {
+                    event.preventDefault();
                     dropdown.classList.toggle('hidden');
+                });
+            }
+
+
+            link.addEventListener('click', (event) => {
+                if (event.target !== arrowIcon && dropdown) {
+                    return;
                 }
             });
         });
     });
+
 
 </script>
 
@@ -262,40 +268,28 @@
     </div>
 </div>
 
-<div class="grid lg:grid-cols-3 gap-8 mt-10 ml-10 mr-10 mb-20 pt-0">
-    <aside class="lg:col-span-1 space-y-6 order-last lg:order-first">
+<div class="grid lg:grid-cols-3 gap-8 mt-10 md:ml-10 md:mr-10 mb-20 pt-0">
+    <aside class="lg:col-span-1 space-y-6 order-last lg:order-first ml-3 mr-3">
         <div class="service-card">
             <h2 class="service-heading">Service Areas</h2>
             <ul class="space-y-2">
                 <li>
-                    <a href="/services/service1/" class="service-link">
-                        Plumbing Services
-                    </a>
+                    <a href="/services/service1/" class="service-link">Plumbing Services</a>
                 </li>
                 <li>
-                    <a href="/services/service2/" class="service-link">
-                        Installation Services
-                    </a>
+                    <a href="/services/service2/" class="service-link">Installation Services</a>
                 </li>
                 <li>
-                    <a href="/services/service3/" class="service-link">
-                        Specialized Plumbing
-                    </a>
+                    <a href="/services/service3/" class="service-link">Specialized Plumbing</a>
                 </li>
                 <li>
-                    <a href="/services/service4/" class="service-link">
-                        Residential Services
-                    </a>
+                    <a href="/services/service4/" class="service-link">Residential Services</a>
                 </li>
                 <li>
-                    <a href="/services/service5/" class="service-link">
-                        Commercial Plumbing
-                    </a>
+                    <a href="/services/service5/" class="service-link">Commercial Plumbing</a>
                 </li>
                 <li>
-                    <a href="/services/service6/" class="service-link">
-                        Maintenance Services
-                    </a>
+                    <a href="/services/service6/" class="service-link">Maintenance Services</a>
                 </li>
             </ul>
         </div>
@@ -310,34 +304,34 @@
     </aside>
 
     <main class="main-content">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, suscipit et. Dolorum officiis possimus quam, delectus esse fugiat, vel laborum maxime eos id perferendis non.</p>
-
-        <div class="carousel-container">
-            <div class="flex transition-transform duration-500" id="carousel-images">
+        <div class="carousel-container relative">
+            <div class="flex transition-transform duration-500 mb-0 pb-0" id="carousel-images">
                 <img src="/resources/assets/plumbingServices.png" alt="Roof Image 1"
                     class="w-full h-64 md:h-80 object-cover flex-shrink-0">
-                <img src="../images/commercialPlumbing.png" alt="Roof Image 2"
+                <img src="/resources/assets/plumbingServices.png" alt="Roof Image 2"
                     class="w-full h-64 md:h-80 object-cover flex-shrink-0">
             </div>
 
-            <button class="carousel-button left-0" id="prev-btn">&larr;</button>
-            <button class="carousel-button right-0" id="next-btn">&rarr;</button>
+            <!-- Circle Indicators -->
+            <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                <span class="carousel-dot h-4 rounded-full cursor-pointer"></span>
+                <span class="carousel-dot h-4 rounded-full cursor-pointer"></span>
+            </div>
         </div>
 
-        <h3 class="section-title">Lorem ipsum dolor.</h3>
-        <p class="mt-4 text-gray-600">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui voluptatibus quas voluptatum sunt, adipisci quod natus delectus animi. Optio ullam repudiandae atque quis possimus illo voluptatum corrupti, harum expedita reprehenderit dicta suscipit inventore a saepe? Iste ratione ullam explicabo quo.
-        </p>
+        <div class="service-content">
+            <h1>Residential Services</h1>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt magni quos fuga quod facere, aliquid.<br>
+Tempore non eum, laboriosam aspernatur unde culpa consequuntur impedit dolores optio qui provident<br>
+quidem repellendus exercitationem velit, saepe adipisci alias amet cupiditate reiciendis veritatis. Facilis, officia.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur temporibus perferendis minima sequi<br>
+explicabo unde tempora adipisci! Impedit porro quo, ipsum iure unde dolor voluptate consequuntur saepe amet<br>
+rerum perferendis, laudantium distinctio, sed quaerat molestiae ex nemo aliquam praesentium adipisci quos<br>
+Dolorum tenetur non molestias, sapiente ex nostrum illo voluptatum iusto, incidunt quo a explicabo!</p>
+<h3>Explore our Audit &amp; Assurances</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae voluptatem animi provident iure quidem omnis<br>
+temporibus hic totam, alias eos repellendus dolore cupiditate libero dicta iste porro. Velit, distinctio.</p>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div class="icon-container">
-                <img src="/resources/assets/plumbingServicesIcon.png" alt="icon" class="h-10">
-                <p class="icon-text">Lorem ipsum dolor sit amet laudantium.</p>
-            </div>
-            <div class="icon-container">
-                <img src="/resources/assets/plumbingServicesIcon.png" alt="icon" class="h-10">
-                <p class="icon-text">Lorem ipsum dolor sit amet laudantium.</p>
-            </div>
         </div>
     </main>
 </div>
@@ -365,7 +359,7 @@
     <div class="footer-container">
         <div class="footer-style">
             <div class="footer-logo">
-                <img src="resources/assets/logo.png" alt="Logo">
+                <img src="/resources/assets/logo.png" alt="Logo">
                 <p class="text-sm mt-2 ml-3 text-gray-400">ProHauz</p>
             </div>
 
@@ -373,16 +367,16 @@
                 <a href="#" aria-label="Facebook" class="footer-icons-style">
                     <i class="fab fa-facebook-f text-2xl"></i>
                 </a>
-                <a href="#" aria-label="Twitter" class="footer-links-style">
+                <a href="#" aria-label="Twitter" class="footer-icons-style">
                     <i class="fab fa-twitter text-2xl"></i>
                 </a>
-                <a href="#" aria-label="Instagram" class="footer-links-style">
+                <a href="#" aria-label="Instagram" class="footer-icons-style">
                     <i class="fab fa-instagram text-2xl"></i>
                 </a>
-                <a href="#" aria-label="LinkedIn" class="footer-links-style">
+                <a href="#" aria-label="LinkedIn" class="footer-icons-style">
                     <i class="fab fa-linkedin-in text-2xl"></i>
                 </a>
-                <a href="#" aria-label="YouTube" class="footer-links-style">
+                <a href="#" aria-label="YouTube" class="footer-icons-style">
                     <i class="fab fa-youtube text-2xl"></i>
                 </a>
             </div>
@@ -390,25 +384,25 @@
 
         <div class="footer-links">
             <div class="links-alignment">
-                <a href="index.html">Home</a>
-                <a href="./pages/contactUs.html">Contact us</a>
-                <a href="./pages/aboutUs.html">About Us</a>
-                <a href="./pages/areaServed.html">Area Served</a>
-                <a href="./pages/ourservices.html">Services</a>
-                <a href="./pages/blog.html">Blog</a>
-                <a href="./pages/sitemap.html">Sitemap</a>
-                <a href="./pages/gallery.html">Gallery</a>
+                <a href="/">Home</a>
+                <a href="/contact/">Contact us</a>
+                <a href="/about/">About Us</a>
+                <a href="/service-areas/">Area Served</a>
+                <a href="/services/">Services</a>
+                <a href="/blogs/">Blog</a>
+                <a href="/sitemap/">Sitemap</a>
+                <a href="/gallery/">Gallery</a>
             </div>
         </div>
 
         <div class="footer-payment-modes">
             <div class="w-full flex justify-center space-x-4">
-                <a href=""><img src="resources/assets/visa.png" alt="Visa"></a>
-                <a href=""><img src="resources/assets/american-express.png" alt="American Express"></a>
-                <a href=""><img src="resources/assets/card.png" alt="MasterCard"></a>
-                <a href=""> <img src="resources/assets/discover.png" alt="Discover"></a>
-                <a href=""><img src="resources/assets/money.png" alt="Cash"></a>
-                <a href=""> <img src="resources/assets/checkbook.png" alt="Check"></a>
+                <a href=""><img src="/resources/assets/visa.png" alt="Visa"></a>
+                <a href=""><img src="/resources/assets/american-express.png" alt="American Express"></a>
+                <a href=""><img src="/resources/assets/card.png" alt="MasterCard"></a>
+                <a href=""> <img src="/resources/assets/discover.png" alt="Discover"></a>
+                <a href=""><img src="/resources/assets/money.png" alt="Cash"></a>
+                <a href=""> <img src="/resources/assets/checkbook.png" alt="Check"></a>
             </div>
         </div>
     </div>

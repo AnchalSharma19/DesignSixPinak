@@ -1,0 +1,90 @@
+<div class="blog-description-container">
+    <div class="blog-grid">
+        <div class="md:col-span-2">
+            <div class="blog-post">
+                <img src="{{blogImage}}" alt="Blog Image" class="blog-image" style="width: 600px; height: 350px;" />
+
+                <div class="mt-4">
+                    <p class="blog-information">
+                        <span class="flex items-center">
+                            <i class="fas fa-user user-icon"></i>
+                            <span class="icon-heading">{{user}}</span>
+                        </span>
+                        <span class="flex items-center">
+                            <i class="fas fa-calendar-alt text-blue-600 hover:text-blue-800 transition mr-2"></i>
+                            <span class="icon-heading">{{publishDate}}</span>
+                        </span>
+                        <span class="flex items-center">
+                            <i class="fas fa-comment text-blue-600 hover:text-blue-800 transition mr-2"></i>
+                            <span class="icon-heading">{{comments}}</span>
+                        </span>
+                    </p>
+                    <p class="blog-description-text">
+                        {{blogDescriptionText1}}
+                    </p>
+                    <br>
+                    <p class="blog-description-text">
+                        {{blogDescriptionText2}}
+                    </p>
+                </div>
+            </div>
+
+            <br>
+            <div class="blog-post mt-10 mb-5">
+                <img src="{{blogImg2}}" alt="Blog Image" class="blog-img2" style="width: 600px; height: auto;" />
+                <div class="mt-4">
+
+                    <div class="blog-content">
+                        <p>{{ content | markdown | safe }}</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="horizontal-divide-line">
+        </div>
+
+
+        <!-- Sidebar -->
+
+        <div>
+            <div class="mb-2">
+                <input type="text" placeholder="Looking for..." class="blog-search" />
+            </div>
+            <h3 class="text-lg font-bold mb-4 mt-8">{{recentPostHeading}}</h3>
+            <div class="space-y-4">
+                {% for post in collections.recentBlogPosts %}
+                <div class="recent-blog-posts">
+                    <img src="{{ post.data.blogImage }}" alt="Post Thumbnail" class="recent-blog-img" />
+                    <div>
+                        <a href="{{ post.url }}" class="recent-blog-title">
+                            {{ post.data.pageTitleText }}
+                        </a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<div class="leave-reply-container">
+    <div class="max-w-4xl w-full p-6">
+        <h2 class="leave-reply-heading">Leave a reply</h2>
+        <p class="text-gray-600 mb-4">
+            Your email address will not be published. Required fields are marked *
+        </p>
+
+        <textarea placeholder="Write your message" class="your-msg-placeholder"></textarea>
+
+        <div class="reply-grid">
+            <input type="text" placeholder="Name" class="reply-form-fields" />
+            <input type="email" placeholder="Email" class="reply-form-fields" />
+            <input type="url" placeholder="Website" class="reply-form-fields" />
+        </div>
+
+        <button class="submit-btn">
+            Submit Comment
+        </button>
+    </div>
+</div>

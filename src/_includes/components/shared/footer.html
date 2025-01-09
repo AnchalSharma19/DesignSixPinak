@@ -17,7 +17,7 @@
     <div class="footer-container">
         <div class="footer-style">
             <div class="footer-logo">
-                <img src="resources/assets/logo.png" alt="Logo">
+                <img src="{{companyLogo}}" alt="Logo">
                 <p class="text-sm mt-2 ml-3 text-gray-400">{{businessInfo.businessName}}</p>
             </div>
 
@@ -25,16 +25,16 @@
                 <a href="#" aria-label="Facebook" class="footer-icons-style">
                     <i class="fab fa-facebook-f text-2xl"></i>
                 </a>
-                <a href="#" aria-label="Twitter" class="footer-links-style">
+                <a href="#" aria-label="Twitter" class="footer-icons-style">
                     <i class="fab fa-twitter text-2xl"></i>
                 </a>
-                <a href="#" aria-label="Instagram" class="footer-links-style">
+                <a href="#" aria-label="Instagram" class="footer-icons-style">
                     <i class="fab fa-instagram text-2xl"></i>
                 </a>
-                <a href="#" aria-label="LinkedIn" class="footer-links-style">
+                <a href="#" aria-label="LinkedIn" class="footer-icons-style">
                     <i class="fab fa-linkedin-in text-2xl"></i>
                 </a>
-                <a href="#" aria-label="YouTube" class="footer-links-style">
+                <a href="#" aria-label="YouTube" class="footer-icons-style">
                     <i class="fab fa-youtube text-2xl"></i>
                 </a>
             </div>
@@ -42,32 +42,32 @@
 
         <div class="footer-links">
             <div class="links-alignment">
-                <a href="index.html">Home</a>
-                <a href="./pages/contactUs.html">Contact us</a>
-                <a href="./pages/aboutUs.html">About Us</a>
-                <a href="./pages/areaServed.html">Area Served</a>
-                <a href="./pages/ourservices.html">Services</a>
-                <a href="./pages/blog.html">Blog</a>
-                <a href="./pages/sitemap.html">Sitemap</a>
-                <a href="./pages/gallery.html">Gallery</a>
+                <a href="{{ '/' | url }}">Home</a>
+                <a href="{{ '/contact/' | url }}">Contact us</a>
+                <a href="{{ '/about/' | url }}">About Us</a>
+                <a href="{{ '/service-areas/' | url }}">Area Served</a>
+                <a href="{{ '/services/' | url }}">Services</a>
+                <a href="{{ '/blogs/' | url }}">Blog</a>
+                <a href="{{ '/sitemap/' | url }}">Sitemap</a>
+                <a href="{{ '/gallery/' | url }}">Gallery</a>
             </div>
         </div>
 
         <div class="footer-payment-modes">
             <div class="w-full flex justify-center space-x-4">
-                <a href=""><img src="resources/assets/visa.png" alt="Visa"></a>
-                <a href=""><img src="resources/assets/american-express.png" alt="American Express"></a>
-                <a href=""><img src="resources/assets/card.png" alt="MasterCard"></a>
-                <a href=""> <img src="resources/assets/discover.png" alt="Discover"></a>
-                <a href=""><img src="resources/assets/money.png" alt="Cash"></a>
-                <a href=""> <img src="resources/assets/checkbook.png" alt="Check"></a>
+                <a href=""><img src="{{paymentMode1}}" alt="Visa"></a>
+                <a href=""><img src="{{paymentMode2}}" alt="American Express"></a>
+                <a href=""><img src="{{paymentMode3}}" alt="MasterCard"></a>
+                <a href=""> <img src="{{paymentMode4}}" alt="Discover"></a>
+                <a href=""><img src="{{paymentMode5}}" alt="Cash"></a>
+                <a href=""> <img src="{{paymentMode6}}" alt="Check"></a>
             </div>
         </div>
     </div>
 </div>
 
 <div class="text-center text-m text-white bg-blue-500 py-5">
-    <p>Copyright © 2024 by Company. All Rights Reserved.</p>
+    <p>{{businessInfo.businessCopyRight}}</p>
     <a href="{{ '/privacy-policy/' | url }}">Privacy & Policy</a>
     <a href="{{ '/terms-and-conditions/' | url }}" class="ml-3">Terms & Conditions</a>
 </div>

@@ -1,0 +1,56 @@
+<div class="grid lg:grid-cols-3 gap-8 mt-10 md:ml-10 md:mr-10 mb-20 pt-0">
+    <aside class="lg:col-span-1 space-y-6 order-last lg:order-first ml-3 mr-3">
+        <div class="service-card">
+            <h2 class="service-heading">{{asideHeading}}</h2>
+            <ul class="space-y-2">
+                <li>
+                    <a href="{{serviceOneLink}}" class="service-link">{{service1}}</a>
+                </li>
+                <li>
+                    <a href="{{serviceTwoLink}}" class="service-link">{{service2}}</a>
+                </li>
+                <li>
+                    <a href="{{serviceThreeLink}}" class="service-link">{{service3}}</a>
+                </li>
+                <li>
+                    <a href="{{serviceFourLink}}" class="service-link">{{service4}}</a>
+                </li>
+                <li>
+                    <a href="{{serviceFiveLink}}" class="service-link">{{service5}}</a>
+                </li>
+                <li>
+                    <a href="{{serviceSixLink}}" class="service-link">{{service6}}</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="contact-card">
+            <img src="{{phoneImg}}" alt="Phone" class="h-12 w-12 mr-4">
+            <div>
+                <h3 class="text-lg font-semibold">{{expertTalk}}</h3>
+                <p class="mt-1">{{contactNumber}}</p>
+            </div>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <div class="carousel-container relative">
+            <div class="flex transition-transform duration-500 mb-0 pb-0" id="carousel-images">
+                <img src="{{plumbingServiceImg1}}" alt="Roof Image 1"
+                    class="w-full h-64 md:h-80 object-cover flex-shrink-0">
+                <img src="{{plumbingServiceImg2}}" alt="Roof Image 2"
+                    class="w-full h-64 md:h-80 object-cover flex-shrink-0">
+            </div>
+
+            <!-- Circle Indicators -->
+            <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                <span class="carousel-dot h-4 rounded-full cursor-pointer"></span>
+                <span class="carousel-dot h-4 rounded-full cursor-pointer"></span>
+            </div>
+        </div>
+
+        <div class="service-content">
+            {{ content | markdown | safe }}
+        </div>
+    </main>
+</div>

@@ -103,7 +103,8 @@
         </div>
     </a>
 
-    <div class="lg:hidden absolute right-6 hamburger-menu">
+    <!-- Hamburger Menu  -->
+    <div class="absolute right-6 hamburger-menu xl:hidden">
         <button id="menu-toggle" class="text-white">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
@@ -112,43 +113,37 @@
         </button>
     </div>
 
-    <!-- Desktop Navbar -->
-
-    <ul class="desktop-navbar">
+    <ul class="desktop-navbar hidden xl:flex">
         <li><a href="/">Home</a></li>
         <li><a href="/about/">About Us</a></li>
 
         <li class="relative group">
             <a href="/services/">Services</a>
             <ul class="desktop-dropdown">
-                <li><a href="/services/service1" class="desktop-dropdown-link">Plumbing
+                <li><a href="/services/service1" class="desktop-dropdown-link">Plumbing Services</a></li>
+                <li><a href="/services/service2" class="desktop-dropdown-link">Installation Services</a>
+                </li>
+                <li><a href="/services/service3" class="desktop-dropdown-link">Specialized Plumbing
                         Services</a></li>
-                <li><a href="/services/service2" class="desktop-dropdown-link">Installation
+                <li><a href="/services/service4" class="desktop-dropdown-link">Residential Services</a>
+                </li>
+                <li><a href="/services/service5" class="desktop-dropdown-link">Commercial Plumbing
                         Services</a></li>
-                <li><a href="/services/service3" class="desktop-dropdown-link">Specialized
-                        Plumbing Services</a></li>
-                <li><a href="/services/service4" class="desktop-dropdown-link">Residential
-                        Services</a></li>
-                <li><a href="/services/service5" class="desktop-dropdown-link">Commercial
-                        Plumbing Services</a></li>
-                <li><a href="/services/service6" class="desktop-dropdown-link">Maintenance
-                        Services</a></li>
+                <li><a href="/services/service6" class="desktop-dropdown-link">Maintenance Services</a>
+                </li>
             </ul>
         </li>
 
         <li class="relative group">
             <a href="/service-areas/">Area Served</a>
             <ul class="desktop-dropdown">
-                <li><a href="/service-areas/area1" class="desktop-dropdown-link">New York Metro
-                        Area</a></li>
+                <li><a href="/service-areas/area1" class="desktop-dropdown-link">New York Metro Area</a>
+                </li>
                 <li><a href="/service-areas/area2" class="desktop-dropdown-link">Albany</a></li>
-                <li><a href="/service-areas/area3" class="desktop-dropdown-link">Yonkers</a>
-                </li>
+                <li><a href="/service-areas/area3" class="desktop-dropdown-link">Yonkers</a></li>
                 <li><a href="/service-areas/area4" class="desktop-dropdown-link">Buffalo</a></li>
-                <li><a href="/service-areas/area5" class="desktop-dropdown-link">Syracuse</a>
-                </li>
-                <li><a href="/service-areas/area6" class="desktop-dropdown-link">Rochester</a>
-                </li>
+                <li><a href="/service-areas/area5" class="desktop-dropdown-link">Syracuse</a></li>
+                <li><a href="/service-areas/area6" class="desktop-dropdown-link">Rochester</a></li>
             </ul>
         </li>
 
@@ -157,11 +152,10 @@
         <li><a href="/contact/">Contact Us</a></li>
     </ul>
 
-    <div class="flex items-center space-x-4">
+    <div class="flex items-center space-x-4 hidden xl:flex">
         <div class="contact-number">Call : 800 555 284</div>
         <a href="/contact/">
-            <button class="btn-red p-3 font-normal text-base">Book
-                Service</button>
+            <button class="btn-red p-3 text-base">Book Service</button>
         </a>
     </div>
 </nav>
@@ -169,25 +163,28 @@
 <!-- Mobile Dropdown Menu -->
 
 <div id="dropdown-menu" class="mobile-dropdown hidden">
-    <div class="dropdown-item"><a href="index.html" class="dropdown-item mobile-dropdown-list">Home</a></div>
-    <div class="dropdown-item"><a href="/about/" class="dropdown-item mobile-dropdown-list">About Us</a>
+    <div class="dropdown-item"><a href="/" class="dropdown-item mobile-dropdown-list">Home</a></div>
+    <div class="dropdown-item"><a href="/about/" class="dropdown-item mobile-dropdown-list">About
+            Us</a>
     </div>
     <div class="dropdown-item">
-        <a href="/services/" class="mobile-dropdown-list">Services ↓</a>
-        <!-- Submenu for services -->
+        <a href="/services/" class="mobile-dropdown-list">Services <i class="fa-solid fa-arrow-down"
+                style="color: #ffffff;"></i></a>
         <div class="ml-4 space-y-2 hidden" id="servicesDropdown">
-            <a href="#" class="block mobile-dropdown-list">Plumbing Services</a>
-            <a href="#" class="block mobile-dropdown-list">Installation Services</a>
-            <a href="#" class="block mobile-dropdown-list">Specialized Plumbing Services</a>
-            <a href="#" class="block mobile-dropdown-list">Residential Services</a>
-            <a href="#" class="block mobile-dropdown-list">Commercial Plumbing Services</a>
-            <a href="#" class="block mobile-dropdown-list">Maintenance Services</a>
+            <a href="/services/service1" class="block mobile-dropdown-list">Plumbing Services</a>
+            <a href="/services/service2" class="block mobile-dropdown-list">Installation Services</a>
+            <a href="/services/service3" class="block mobile-dropdown-list">Specialized Plumbing
+                Services</a>
+            <a href="/services/service4" class="block mobile-dropdown-list">Residential Services</a>
+            <a href="/services/service5" class="block mobile-dropdown-list">Commercial Plumbing
+                Services</a>
+            <a href="/services/service6" class="block mobile-dropdown-list">Maintenance Services</a>
         </div>
     </div>
 
     <div class="dropdown-item">
-        <a href="/service-areas/" class="mobile-dropdown-list">Area Served ↓</a>
-        <!-- Submenu for area served -->
+        <a href="/service-areas/" class="mobile-dropdown-list">Area Served <i
+                class="fa-solid fa-arrow-down" style="color: #ffffff;"></i></a>
         <div class="ml-4 space-y-2 hidden" id="areaServedDropdown">
             <a href="/service-areas/area1" class="block mobile-dropdown-list">New York Metro Area</a>
             <a href="/service-areas/area2" class="block mobile-dropdown-list">Albany</a>
@@ -204,7 +201,7 @@
     <div class="dropdown-item"><a href="/contact/" class="dropdown-item mobile-dropdown-list">Contact
             Us</a></div>
 
-    <div class="flex ">
+    <div class="flex mt-5">
         <a href="/contact/">
             <button
                 class="bg-red-700 text-white px-4 py-2 rounded transform transition duration-300 ease-in-out hover:bg-red-600 hover:scale-105 hover:shadow-lg">Book
@@ -215,6 +212,7 @@
 
 
 <script>
+
     document.addEventListener('DOMContentLoaded', () => {
         const menuToggle = document.getElementById('menu-toggle');
         const dropdownMenu = document.getElementById('dropdown-menu');
@@ -222,7 +220,6 @@
         if (menuToggle && dropdownMenu) {
             menuToggle.addEventListener('click', (event) => {
                 event.stopPropagation();
-                console.log("Toggling dropdown visibility");
                 dropdownMenu.classList.toggle('hidden');
                 dropdownMenu.classList.toggle('block');
             });
@@ -235,17 +232,26 @@
             });
         }
 
-        // Toggle submenus for Services and Area Served
-        document.querySelectorAll('.dropdown-item > a').forEach(item => {
-            item.addEventListener('click', (event) => {
-                event.preventDefault();
-                const dropdown = item.nextElementSibling;
-                if (dropdown) {
+        document.querySelectorAll('.dropdown-item > a').forEach(link => {
+            const dropdown = link.nextElementSibling;
+            const arrowIcon = link.querySelector('i');
+
+            if (arrowIcon && dropdown) {
+                arrowIcon.addEventListener('click', (event) => {
+                    event.preventDefault();
                     dropdown.classList.toggle('hidden');
+                });
+            }
+
+
+            link.addEventListener('click', (event) => {
+                if (event.target !== arrowIcon && dropdown) {
+                    return;
                 }
             });
         });
     });
+
 
 </script>
 
@@ -268,7 +274,7 @@
         </div>
 
         <br>
-        <a href="./pages/contactUs.html">
+        <a href="/contact/">
             <button class="btn-red">
                 Request Job Estimate
             </button>
@@ -327,7 +333,7 @@
         </div>
 
         <div class="button-container">
-            <a href="">
+            <a href="/services/">
                 <button class="more-service-btn">
                     More Services
                 </button>
@@ -465,7 +471,7 @@
             <div class="p-4">
                 <p class="blog-head">BLOG</p>
                 <h3 class="blog-card-heading">The Best Water Filters of 2018 – Our Choice</h3>
-                <a href=""><button class="blog-btn ">
+                <a href="/blogs/the-best-water-filters/"><button class="blog-btn ">
                         READ MORE
                     </button></a>
             </div>
@@ -477,7 +483,7 @@
             <div class="p-4">
                 <p class="blog-head">BLOG</p>
                 <h3 class="blog-card-heading">Your Faucets Could Be Making Your Home Unsafe</h3>
-                <a href=""><button class="blog-btn ">
+                <a href="/blogs/your-faucets-making-home-unsafe/"><button class="blog-btn ">
                         READ MORE
                     </button></a>
             </div>
@@ -488,14 +494,14 @@
             <img src="resources/assets/blogImageThree.png" alt="Drain cleaning" class="blog-card-image">
             <div class="p-4">
                 <p class="blog-head">BLOG</p>
-                <h3 class="blog-card-heading">Different Types of Plumbing Control</h3>
-                <a href=""><button class="blog-btn ">
+                <h3 class="blog-card-heading">Why You Should Invest in a Good Water Heater</h3>
+                <a href="/blogs/why-invest-in-good-water-heater/"><button class="blog-btn ">
                         READ MORE
                     </button></a>
             </div>
         </div>
     </div>
-    <a href=""><button class="blog-btn mt-10 ">
+    <a href="/blogs/"><button class="blog-btn mt-10 ">
             All Blog
         </button></a>
     <br>
@@ -553,8 +559,7 @@
             <img src="resources/assets/areaServedOne.png.jpg" alt="area one" class="area-card-image ">
             <div class="card-styling">
                 <h3 class="area-name">New York Metro Area</h3>
-                <a href="./pages/areaServedOne.html" class="arrow-icon"><i
-                        class="fa-solid fa-circle-arrow-right"></i></a>
+                <a href="/service-areas/area1/" class="arrow-icon"><i class="fa-solid fa-circle-arrow-right"></i></a>
             </div>
         </div>
 
@@ -562,8 +567,7 @@
             <img src="resources/assets/areaServedTwo.png.jpg" alt="area two" class="area-card-image">
             <div class="card-styling">
                 <h3 class="area-name">Albany</h3>
-                <a href="./pages/areaServedTwo.html" class="arrow-icon"><i
-                        class="fa-solid fa-circle-arrow-right"></i></a>
+                <a href="/service-areas/area2/" class="arrow-icon"><i class="fa-solid fa-circle-arrow-right"></i></a>
             </div>
         </div>
 
@@ -571,8 +575,7 @@
             <img src="resources/assets/areaServedThree.png.jpg" alt="area three" class="area-card-image">
             <div class="card-styling">
                 <h3 class="area-name">Yonkers</h3>
-                <a href="./pages/areaServedThree.html" class="arrow-icon"><i
-                        class="fa-solid fa-circle-arrow-right"></i></a>
+                <a href="/service-areas/area3/" class="arrow-icon"><i class="fa-solid fa-circle-arrow-right"></i></a>
             </div>
         </div>
 
@@ -580,8 +583,7 @@
             <img src="resources/assets/areaServedFour.png.jpg" alt="area four" class="area-card-image">
             <div class="card-styling">
                 <h3 class="area-name">Buffalo</h3>
-                <a href="./pages/areaServedFour.html" class="arrow-icon"><i
-                        class="fa-solid fa-circle-arrow-right"></i></a>
+                <a href="/service-areas/area4/" class="arrow-icon"><i class="fa-solid fa-circle-arrow-right"></i></a>
             </div>
         </div>
 
@@ -589,8 +591,7 @@
             <img src="resources/assets/areaServedFive.png.jpg" alt="area five" class="area-card-image">
             <div class="card-styling">
                 <h3 class="area-name">Syracuse</h3>
-                <a href="./pages/areaServedFive.html" class="arrow-icon"><i
-                        class="fa-solid fa-circle-arrow-right"></i></a>
+                <a href="/service-areas/area5/" class="arrow-icon"><i class="fa-solid fa-circle-arrow-right"></i></a>
             </div>
         </div>
 
@@ -598,8 +599,7 @@
             <img src="resources/assets/areaServedSix.png.jpg" alt="area six" class="area-card-image">
             <div class="card-styling">
                 <h3 class="area-name">Rochester</h3>
-                <a href="./pages/areaServedSix.html" class="arrow-icon"><i
-                        class="fa-solid fa-circle-arrow-right"></i></a>
+                <a href="/service-areas/area6/" class="arrow-icon"><i class="fa-solid fa-circle-arrow-right"></i></a>
             </div>
         </div>
     </div>
@@ -935,7 +935,7 @@
                     <h2 class="contact">800 555 284</h2>
                 </div>
             </div>
-            <a href="./pages/contactUs.html"><button class="btn-red mt-5 ml-0 mb-10">
+            <a href="/contact/"><button class="btn-red mt-5 ml-0 mb-10">
                     Schedule a Service Call
                 </button></a>
         </div>
@@ -1029,16 +1029,16 @@
                 <a href="#" aria-label="Facebook" class="footer-icons-style">
                     <i class="fab fa-facebook-f text-2xl"></i>
                 </a>
-                <a href="#" aria-label="Twitter" class="footer-links-style">
+                <a href="#" aria-label="Twitter" class="footer-icons-style">
                     <i class="fab fa-twitter text-2xl"></i>
                 </a>
-                <a href="#" aria-label="Instagram" class="footer-links-style">
+                <a href="#" aria-label="Instagram" class="footer-icons-style">
                     <i class="fab fa-instagram text-2xl"></i>
                 </a>
-                <a href="#" aria-label="LinkedIn" class="footer-links-style">
+                <a href="#" aria-label="LinkedIn" class="footer-icons-style">
                     <i class="fab fa-linkedin-in text-2xl"></i>
                 </a>
-                <a href="#" aria-label="YouTube" class="footer-links-style">
+                <a href="#" aria-label="YouTube" class="footer-icons-style">
                     <i class="fab fa-youtube text-2xl"></i>
                 </a>
             </div>
@@ -1046,14 +1046,14 @@
 
         <div class="footer-links">
             <div class="links-alignment">
-                <a href="index.html">Home</a>
-                <a href="./pages/contactUs.html">Contact us</a>
-                <a href="./pages/aboutUs.html">About Us</a>
-                <a href="./pages/areaServed.html">Area Served</a>
-                <a href="./pages/ourservices.html">Services</a>
-                <a href="./pages/blog.html">Blog</a>
-                <a href="./pages/sitemap.html">Sitemap</a>
-                <a href="./pages/gallery.html">Gallery</a>
+                <a href="/">Home</a>
+                <a href="/contact/">Contact us</a>
+                <a href="/about/">About Us</a>
+                <a href="/service-areas/">Area Served</a>
+                <a href="/services/">Services</a>
+                <a href="/blogs/">Blog</a>
+                <a href="/sitemap/">Sitemap</a>
+                <a href="/gallery/">Gallery</a>
             </div>
         </div>
 

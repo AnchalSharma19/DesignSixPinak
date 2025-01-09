@@ -5,7 +5,7 @@
         "comments": 3,
         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sed doloremque magni aliquid iste debitis recusandae accusantium animi quibusdam impedit mollitia.",
         "image": "/resources/assets/BlogOne.png",
-        "url": "blogOne.html"
+        "url": "/blogs/the-best-water-filters/"
     },
     {
         "title": "Your Faucets Could Be Making Your Home Unsafe",
@@ -13,7 +13,7 @@
         "comments": 1,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod facilis iste asperiores porro fugiat.",
         "image": "/resources/assets/BlogTwo.png",
-        "url": "blogTwo.html"
+        "url": "/blogs/your-faucets-making-home-unsafe/"
     },
     {
         "title": "Why You Should Invest in a Good Water Heater",
@@ -21,7 +21,7 @@
         "comments": 2,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ut dolore voluptas fugiat quis quibusdam, in aliquam voluptates.",
         "image": "/resources/assets/BlogThree.png",
-        "url": "blogThree.html"
+        "url": "/blogs/why-invest-in-good-water-heater/"
     },
     {
         "title": "How to Save Money on Plumbing Repairs",
@@ -29,7 +29,7 @@
         "comments": 5,
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem quas ipsa debitis porro, cupiditate amet.",
         "image": "/resources/assets/blogFour.png",
-        "url": "blogFour.html"
+        "url": "/blogs/how-to-save-money-on-plumbing-repair/"
     },
     {
         "title": "Tips to Maintain Your Home's Water Quality",
@@ -37,14 +37,14 @@
         "comments": 7,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, aperiam modi est eius distinctio natus ab enim tenetur! Vero esse ipsum magni aliquid ipsam molestias quidem distinctio officia eaque animi!",
         "image": "/resources/assets/blogFive.png",
-        "url": "blogFive.html"
+        "url": "/blogs/tips-to-maintain-home-water-quality/"
     },
     {
         "title": "Best Practices for Plumbing in 2024",
         "date": "January 5, 2018",
         "comments": 4,
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel labore corrupti dolor suscipit nisi!",
-        "image": "/resources/assets/blogSix.png",
-        "url": "blogSix.html"
+        "image": "/resources/assets/blogsix.png",
+        "url": "/blogs/best-practices-for-plumbing/"
     }
 ]

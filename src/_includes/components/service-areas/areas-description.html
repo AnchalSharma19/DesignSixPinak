@@ -49,8 +49,8 @@
         <main class="area-info">
             <div class="info-container">
                 <img src="{{areaImage}}" alt="City View" class="w-full h-96 object-cover">
-                <div class="area-info-text">
-                    <p class="text-lg text-gray-800">{{areaDescription}}</p>
+                <div class="area-description">
+                    <p> {{ content | markdown | safe }}</p>
                 </div>
             </div>
         </main>

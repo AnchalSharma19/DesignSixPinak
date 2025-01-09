@@ -30,21 +30,17 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addWatchTarget("./src/resources/css/");
     eleventyConfig.addWatchTarget("./src/resources/scripts/");
 
-    // Custom Blog Posts Collection
-    eleventyConfig.addCollection("blogPosts", function (collectionApi) {
-        return collectionApi.getFilteredByGlob("./src/blogs/*.md").sort((a, b) => {
-            // Sorting Logic
-            if (a.data.recent && !b.data.recent) {
-                return -1;
-            } else if (!a.data.recent && b.data.recent) {
-                return 1;
-            }
-            if (a.data.recent && b.data.recent) {
-                return (a.data.order || 0) - (b.data.order || 0);
-            }
-            return 0;
-        });
+
+
+    eleventyConfig.addCollection("recentBlogPosts", function (collectionApi) {
+        return collectionApi.getAll()
+            .filter(item => item.data.recent && item.data.publishDate) // Ensure 'recent' and 'publishDate' exist
+            .sort((a, b) => new Date(b.data.publishDate) - new Date(a.data.publishDate)) // Sort by publishDate
+            .slice(0, 3); // Limit to 3 posts
     });
+
+
+
 
     // Eleventy Configuration
     return {

@@ -12,7 +12,8 @@ module.exports = {
         primary: "#3c82f6",
         secondary: '#2463eb',
         btnColor: '#dc2625',
-        headingYellow: '#fff688'
+        headingYellow: '#fff688',
+        'xl': '1180px',
       }
     },
   },

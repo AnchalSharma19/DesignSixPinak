@@ -189,3 +189,41 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+
+
+// Services Description Page Image Carousel
+document.addEventListener('DOMContentLoaded', function () {
+    const carouselImages = document.getElementById('carousel-images');
+    const images = carouselImages.querySelectorAll('img');
+    const dots = document.querySelectorAll('.carousel-dot');
+    let index = 0;
+    const totalImages = images.length;
+    const rotationInterval = 2000;
+
+    function updateCarousel() {
+        const imageWidth = images[0].clientWidth;
+        carouselImages.style.transform = `translateX(-${index * imageWidth}px)`;
+
+        // Update dot styles
+        dots.forEach(dot => dot.classList.remove('active'));
+        dots[index].classList.add('active');
+    }
+
+    dots.forEach((dot, i) => {
+        dot.addEventListener('click', function () {
+            index = i;
+            updateCarousel();
+        });
+    });
+
+    setInterval(function () {
+        if (index < totalImages - 1) {
+            index++;
+        } else {
+            index = 0; // Loop back to the first image
+        }
+        updateCarousel();
+    }, rotationInterval);
+
+    updateCarousel();
+});
