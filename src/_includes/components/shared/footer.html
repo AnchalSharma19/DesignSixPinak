@@ -1,8 +1,7 @@
 <!-- Map -->
-
 <div class="map-container" style="height: 450px;">
     <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387194.06217238074!2d-74.30932166836448!3d40.697019303516804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1731671011048!5m2!1sen!2sin"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193747.83570543102!2d-74.11809262741023!3d40.71277532257029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a1720c681bb%3A0x63e6d2e059dfdb0!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1673540628769!5m2!1sen!2sin"
         width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
 
@@ -17,7 +16,7 @@
     <div class="footer-container">
         <div class="footer-style">
             <div class="footer-logo">
-                <img src="{{companyLogo}}" alt="Logo">
+                <img src="{{businessInfo.businessLogo}}" alt="Logo">
                 <p class="text-sm mt-2 ml-3 text-gray-400">{{businessInfo.businessName}}</p>
             </div>
 
@@ -55,12 +54,12 @@
 
         <div class="footer-payment-modes">
             <div class="w-full flex justify-center space-x-4">
-                <a href=""><img src="{{paymentMode1}}" alt="Visa"></a>
-                <a href=""><img src="{{paymentMode2}}" alt="American Express"></a>
-                <a href=""><img src="{{paymentMode3}}" alt="MasterCard"></a>
-                <a href=""> <img src="{{paymentMode4}}" alt="Discover"></a>
-                <a href=""><img src="{{paymentMode5}}" alt="Cash"></a>
-                <a href=""> <img src="{{paymentMode6}}" alt="Check"></a>
+                <a href=""><img src="{{businessInfo.paymentMode1}}" alt="Visa"></a>
+                <a href=""><img src="{{businessInfo.paymentMode2}}" alt="American Express"></a>
+                <a href=""><img src="{{businessInfo.paymentMode3}}" alt="MasterCard"></a>
+                <a href=""> <img src="{{businessInfo.paymentMode4}}" alt="Discover"></a>
+                <a href=""><img src="{{businessInfo.paymentMode5}}" alt="Cash"></a>
+                <a href=""> <img src="{{businessInfo.paymentMode6}}" alt="Check"></a>
             </div>
         </div>
     </div>

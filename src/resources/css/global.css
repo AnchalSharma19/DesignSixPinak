@@ -19,17 +19,17 @@
     @apply lg:flex space-x-6 ml-12 text-lg text-white hidden;
 }
 
-.desktop-navbar li a {
+.desktop-elements {
     @apply hover:font-bold hover:border-b-2 hover:border-blue-500 transition duration-700 ease-in-out;
 }
+
 
 .desktop-dropdown {
     @apply absolute hidden group-hover:block bg-gray-200 shadow-lg mt-0 text-base w-52 text-center;
 }
 
-
 .desktop-dropdown-link {
-    @apply block px-4 py-2 hover:bg-gray-200 hover:text-primary hover:font-bold pt-3 pb-3 text-black;
+    @apply block px-4 py-2 hover:bg-gray-300 hover:text-primary hover:font-bold pt-3 pb-3 text-black;
 }
 
 

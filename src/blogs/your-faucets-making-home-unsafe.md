@@ -4,8 +4,8 @@ layout : layouts/blog-description.html
 title : Blog Two
 companyLogo : /resources/assets/logo.png
 
-recent: true
-order: 2
+recent : true
+
 
 bannerImg : /resources/assets/blogImage.png
 pageTitle : Blog
@@ -14,7 +14,7 @@ pageTitleText :  Your Faucets Could Be Making Your Home Unsafe
 
 blogImage : /resources/assets/blogTwo.png
 user : Users
-publishDate : 2022-19-11
+publishDate : "2022-19-11"
 comments : 5 Comments
 
 blogDescriptionText1 : " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis qui totam magnam dolorem

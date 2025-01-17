@@ -1,7 +1,7 @@
 <nav class="nav-container">
     <a href="{{ '/' | url }}">
         <div class="logo">
-            <img src="{{companyLogo}}" alt="Logo" class="h-16 w-16 mr-1">
+            <img src="{{businessInfo.businessLogo}}" alt="Logo" class="h-16 w-16 mr-1">
             <div class="logo-text">{{businessInfo.businessName}}</div>
         </div>
     </a>
@@ -17,11 +17,11 @@
     </div>
 
     <ul class="desktop-navbar hidden xl:flex">
-        <li><a href="{{ '/' | url }}">Home</a></li>
-        <li><a href="{{ '/about/' | url }}">About Us</a></li>
+        <li><a href="{{ '/' | url }}" class="desktop-elements">Home</a></li>
+        <li><a href="{{ '/about/' | url }}" class="desktop-elements">About Us</a></li>
 
         <li class="relative group">
-            <a href="{{ '/services/' | url }}">Services</a>
+            <a href="{{ '/services/' | url }}" class="desktop-elements">Services</a>
             <ul class="desktop-dropdown">
                 <li><a href="{{ '/services/service1' | url }}" class="desktop-dropdown-link">Plumbing Services</a></li>
                 <li><a href="{{ '/services/service2' | url }}" class="desktop-dropdown-link">Installation Services</a>
@@ -38,7 +38,7 @@
         </li>
 
         <li class="relative group">
-            <a href="{{ '/service-areas/' | url }}">Area Served</a>
+            <a href="{{ '/service-areas/' | url }}" class="desktop-elements">Area Served</a>
             <ul class="desktop-dropdown">
                 <li><a href="{{ '/service-areas/area1' | url }}" class="desktop-dropdown-link">New York Metro Area</a>
                 </li>
@@ -50,9 +50,9 @@
             </ul>
         </li>
 
-        <li><a href="{{ '/blogs/' | url }}">Blog</a></li>
-        <li><a href="{{ '/gallery/' | url }}">Gallery</a></li>
-        <li><a href="{{ '/contact/' | url }}">Contact Us</a></li>
+        <li><a href="{{ '/blogs/' | url }}" class="desktop-elements">Blog</a></li>
+        <li><a href="{{ '/gallery/' | url }}" class="desktop-elements">Gallery</a></li>
+        <li><a href="{{ '/contact/' | url }}" class="desktop-elements">Contact Us</a></li>
     </ul>
 
     <div class="flex items-center space-x-4 hidden xl:flex">

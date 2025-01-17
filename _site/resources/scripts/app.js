@@ -227,3 +227,37 @@ document.addEventListener('DOMContentLoaded', function () {
 
     updateCarousel();
 });
+
+
+// Logic for form submission
+
+document.getElementById('contact-form').addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    const formData = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        address: document.getElementById('address').value,
+        subject: document.getElementById('subject').value,
+        message: document.getElementById('message').value,
+    };
+
+    try {
+        const response = await fetch('/api/send_email', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData),
+        });
+
+        if (response.ok) {
+            alert('Email sent successfully!');
+        } else {
+            alert('Failed to send email. Please try again.');
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        alert('An error occurred while sending the email.');
+    }
+});

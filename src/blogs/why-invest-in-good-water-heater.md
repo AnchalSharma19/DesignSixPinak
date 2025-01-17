@@ -5,7 +5,7 @@ title : Blog Three
 companyLogo : /resources/assets/logo.png
 
 recent: true
-order: 3
+
 
 bannerImg : /resources/assets/blogImage.png
 pageTitle : Blog
@@ -14,7 +14,7 @@ pageTitleText :  Why You Should Invest in a Good Water Heater
 
 blogImage : /resources/assets/blogThree.png
 user : Users
-publishDate : 2022-10-08
+publishDate : "2022-10-08"
 comments : 9 Comments
 
 blogDescriptionText1 : " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis qui totam magnam dolorem

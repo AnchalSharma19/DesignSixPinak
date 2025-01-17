@@ -33,18 +33,27 @@
 
             <div class="col-span-1 md:col-span-3">
                 <div class="form-details bg-white shadow-md rounded-lg p-6 md:p-8 h-full">
-                    <h2 class="form-heading">{{formHeading1}}<span class="text-blue-500">Message</span></h2>
-                    <form action="#" method="post" class="space-y-4 md:space-y-6">
+                    <h2 class="form-heading">{{formHeading1}}<span class="text-blue-500"> {{formHeading2}}</span></h2>
+                    <form id="contact-form" action="/api/send_email/" method="POST" class="space-y-4 md:space-y-6">
                         <div class="form-grid">
-                            <input type="text" placeholder="Enter your name" class="form-placeholder" />
-                            <input type="email" placeholder="Enter your email" class="form-placeholder" />
+
+                            <input type="text" id="name" placeholder="Enter your name" class="form-placeholder" />
+
+                            <input type="email" id="email" placeholder="Enter your email" class="form-placeholder" />
+
                         </div>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
-                            <input type="url" placeholder="Your website" class="form-placeholder" />
-                            <input type="text" placeholder="Your subject" class="form-placeholder" />
+
+                            <input type="text" placeholder="Your address" id="address" class="form-placeholder" />
+
+                            <input type="text" placeholder="Your subject" id="subject" class="form-placeholder" />
+
                         </div>
-                        <textarea placeholder="Write your message" rows="4" class="form-placeholder"></textarea>
-                        <button class="btn-red ml-0">
+
+                        <textarea placeholder="Write your message" rows="4" id="message"
+                            class="form-placeholder"></textarea>
+
+                        <button class="btn-red ml-0" type="submit">
                             {{sendmsg}}
                         </button>
                     </form>
