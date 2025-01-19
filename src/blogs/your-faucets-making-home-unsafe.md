@@ -27,7 +27,7 @@ blogDescriptionText2 :  " Lorem ipsum dolor sit amet, consectetur adipisicing el
                             doloremque repellendus distinctio cumque itaque obcaecati ipsum provident consequuntur
                             praesentium molestias quo hic, dolorem id laudantium."                       
 
-blogImg2 : /resources/assets/blogTwo.png
+blogImg2 : /resources/assets/BlogTwo.png
 
 recentPostHeading : Recent Posts
 
