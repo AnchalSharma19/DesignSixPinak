@@ -2,7 +2,6 @@
 
 layout : layouts/blog-description.html
 title : Blog One
-companyLogo : /resources/assets/logo.png
 
 bannerImg : /resources/assets/blogImage.png
 pageTitle : Blog

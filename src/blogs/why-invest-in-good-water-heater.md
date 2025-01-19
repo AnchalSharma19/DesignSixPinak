@@ -12,7 +12,7 @@ pageTitle : Blog
 pageTitleText :  Why You Should Invest in a Good Water Heater
 
 
-blogImage : /resources/assets/blogThree.png
+blogImage : /resources/assets/BlogThree.png
 user : Users
 publishDate : "2022-10-08"
 comments : 9 Comments

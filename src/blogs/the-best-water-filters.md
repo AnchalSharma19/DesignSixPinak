@@ -12,7 +12,7 @@ pageTitle : Blog
 pageTitleText : The Best Water Filters of 2018 – Our Choice
 
 
-blogImage : /resources/assets/blogOne.png
+blogImage : /resources/assets/BlogOne.png
 user : Users
 publishDate : 2023-12-20
 comments : 3 Comments
