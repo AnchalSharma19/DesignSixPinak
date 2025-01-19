@@ -1,0 +1,82 @@
+{
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Plumbing Services",
+    "description": "Comprehensive plumbing services including installation, specialized plumbing, residential, and commercial maintenance.",
+    "url": "https://example.com/services/plumbing-services",
+    "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://example.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Services",
+                "item": "https://example.com/services"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Plumbing Services",
+                "item": "https://example.com/services/plumbing-services"
+            }
+        ]
+    },
+    "mainEntity": {
+        "@type": "Service",
+        "name": "Plumbing Services",
+        "serviceType": "Plumbing, Installation, Specialized Plumbing, Residential, Commercial, and Maintenance",
+        "provider": {
+            "@type": "Organization",
+            "name": "Your Company Name",
+            "telephone": "800-555-284",
+            "url": "https://example.com"
+        },
+        "image": "https://example.com/resources/assets/plumbingServices.png",
+        "description": "We provide high-quality plumbing services tailored to your needs."
+    },
+    "hasPart": [
+        {
+            "@type": "CollectionPage",
+            "name": "Service Areas",
+            "about": [
+                {
+                    "@type": "Service",
+                    "name": "Installation Services",
+                    "url": "https://example.com/services/installation-services"
+                },
+                {
+                    "@type": "Service",
+                    "name": "Specialized Plumbing",
+                    "url": "https://example.com/services/specialized-plumbing"
+                },
+                {
+                    "@type": "Service",
+                    "name": "Residential Services",
+                    "url": "https://example.com/services/residential-services"
+                },
+                {
+                    "@type": "Service",
+                    "name": "Commercial Plumbing",
+                    "url": "https://example.com/services/commercial-plumbing"
+                },
+                {
+                    "@type": "Service",
+                    "name": "Maintenance Services",
+                    "url": "https://example.com/services/maintenance-services"
+                }
+            ]
+        }
+    ],
+    "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "800-555-284",
+        "contactType": "Customer Service",
+        "description": "Talk to an expert about our services."
+    }
+}

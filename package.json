@@ -5,6 +5,7 @@
   "scripts": {
     "start": "npx eleventy --serve",
     "dev": "npx tailwindcss -i ./src/resources/css/global.css -o ./_site/css/styles.css --watch",
+    "build": "npx tailwindcss -i ./src/resources/css/global.css -o ./_site/css/styles.css && npx eleventy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

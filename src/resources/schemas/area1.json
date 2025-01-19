@@ -1,0 +1,87 @@
+{
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "New York Metro Area",
+    "description": "Learn about our plumbing services in the New York Metro Area, including why customers choose us for reliable and efficient plumbing solutions.",
+    "url": "https://example.com/service-areas/area1",
+    "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://example.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Service Areas",
+                "item": "https://example.com/service-areas"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "New York Metro Area",
+                "item": "https://example.com/service-areas/area1"
+            }
+        ]
+    },
+    "mainEntity": {
+        "@type": "Service",
+        "name": "Plumbing Services in New York Metro Area",
+        "serviceType": "Plumbing, Repairs, Installation",
+        "provider": {
+            "@type": "Organization",
+            "name": "Your Company Name",
+            "telephone": "800-555-284",
+            "url": "https://example.com"
+        },
+        "areaServed": [
+            {
+                "@type": "Place",
+                "name": "New York Metro Area",
+                "url": "https://example.com/service-areas/area1"
+            },
+            {
+                "@type": "Place",
+                "name": "Albany",
+                "url": "https://example.com/service-areas/area2"
+            },
+            {
+                "@type": "Place",
+                "name": "Yonkers",
+                "url": "https://example.com/service-areas/area3"
+            },
+            {
+                "@type": "Place",
+                "name": "Buffalo",
+                "url": "https://example.com/service-areas/area4"
+            },
+            {
+                "@type": "Place",
+                "name": "Syracuse",
+                "url": "https://example.com/service-areas/area5"
+            },
+            {
+                "@type": "Place",
+                "name": "Rochester",
+                "url": "https://example.com/service-areas/area6"
+            }
+        ],
+        "image": "https://example.com/resources/assets/areaServedOne.png",
+        "description": "Expert Plumbing Services Available Across the New York Metro Area – From leaky faucets to major repairs, our plumbers are ready to serve.",
+        "slogan": "Fast, Friendly, and Dependable Plumbing Services You Can Trust!"
+    },
+    "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "800-555-284",
+        "contactType": "Customer Service",
+        "description": "Talk to an expert about plumbing services in your area."
+    },
+    "hasPart": {
+        "@type": "WebPageElement",
+        "name": "Why Choose Us",
+        "text": "Discover why customers trust us for efficient plumbing solutions, including reliable service, expert plumbers, and fast response times."
+    }
+}
