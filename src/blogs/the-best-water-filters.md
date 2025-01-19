@@ -27,17 +27,9 @@ blogDescriptionText2 :  " Lorem ipsum dolor sit amet, consectetur adipisicing el
                             doloremque repellendus distinctio cumque itaque obcaecati ipsum provident consequuntur
                             praesentium molestias quo hic, dolorem id laudantium."                       
 
-blogImg2 : /resources/assets/blogOne.png
+blogImg2 : /resources/assets/BlogOne.png
 
 recentPostHeading : Recent Posts
-
-
-paymentMode1 : /resources/assets/visa.png
-paymentMode2 : /resources/assets/american-express.png
-paymentMode3 : /resources/assets/card.png
-paymentMode4 : /resources/assets/discover.png
-paymentMode5 : /resources/assets/money.png
-paymentMode6 : /resources/assets/checkbook.png
 
 
 ---

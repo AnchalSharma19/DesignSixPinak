@@ -29,14 +29,6 @@ blogImg2 : /resources/assets/blogFour.png
 recentPostHeading : Recent Posts
 
 
-paymentMode1 : /resources/assets/visa.png
-paymentMode2 : /resources/assets/american-express.png
-paymentMode3 : /resources/assets/card.png
-paymentMode4 : /resources/assets/discover.png
-paymentMode5 : /resources/assets/money.png
-paymentMode6 : /resources/assets/checkbook.png
-
-
 ---
 
 # ProHauz is the only theme you will ever need
