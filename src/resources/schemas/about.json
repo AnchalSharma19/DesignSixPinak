@@ -1,0 +1,84 @@
+{
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Company Name",
+    "url": "https://www.yourwebsite.com",
+    "logo": "/resources/assets/logo.png",
+    "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-800-123-4567",
+        "contactType": "Customer Service",
+        "areaServed": "US",
+        "availableLanguage": "English"
+    },
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Main Street",
+        "addressLocality": "New York",
+        "addressRegion": "NY",
+        "postalCode": "10001",
+        "addressCountry": "US"
+    },
+    "sameAs": [
+        "https://www.facebook.com/yourcompany",
+        "https://www.twitter.com/yourcompany",
+        "https://www.instagram.com/yourcompany"
+    ],
+    "serviceArea": [
+        {
+            "@type": "Place",
+            "name": "New York Metro Area",
+            "url": "/service-areas/area1/"
+        },
+        {
+            "@type": "Place",
+            "name": "Albany",
+            "url": "/service-areas/area2/"
+        },
+        {
+            "@type": "Place",
+            "name": "Yonkers",
+            "url": "/service-areas/area3/"
+        },
+        {
+            "@type": "Place",
+            "name": "Buffalo",
+            "url": "/service-areas/area4/"
+        },
+        {
+            "@type": "Place",
+            "name": "Syracuse",
+            "url": "/service-areas/area5/"
+        },
+        {
+            "@type": "Place",
+            "name": "Rochester",
+            "url": "/service-areas/area6/"
+        }
+    ],
+    "founders": [
+        {
+            "@type": "Person",
+            "name": "John Doe",
+            "jobTitle": "CEO",
+            "image": "/resources/assets/ceoImg.png",
+            "signature": "/resources/assets/Signature.png"
+        }
+    ],
+    "description": "We have over 25 years of experience in the plumbing, sanitary, and dry sanitation industry.",
+    "logo": "/resources/assets/logo.png",
+    "mainEntityOfPage": "https://www.yourwebsite.com",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Main St",
+        "addressLocality": "New York",
+        "addressRegion": "NY",
+        "postalCode": "10001",
+        "addressCountry": "US"
+    },
+    "sameAs": [
+        "https://www.linkedin.com/company/yourcompany"
+    ],
+    "additionalType": "https://schema.org/PlumbingService",
+    "hasMap": "https://www.google.com/maps/embed?pb=..."
+}

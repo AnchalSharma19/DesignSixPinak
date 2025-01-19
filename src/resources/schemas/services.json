@@ -1,0 +1,104 @@
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Services",
+                    "item": "/services"
+                }
+            ]
+        },
+        {
+            "@type": "WebPage",
+            "name": "Services",
+            "url": "/services",
+            "description": "Explore a range of services including plumbing, installation, and maintenance.",
+            "mainEntity": {
+                "@type": "Service",
+                "serviceType": "Residential and Commercial Plumbing Services",
+                "areaServed": "USA",
+                "provider": {
+                    "@type": "Organization",
+                    "name": "Your Company Name",
+                    "url": "https://yourwebsite.com"
+                },
+                "hasOfferCatalog": {
+                    "@type": "OfferCatalog",
+                    "name": "Service Catalog",
+                    "itemListElement": [
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Plumbing Services",
+                                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, suscipit.",
+                                "url": "/services/service1/",
+                                "image": "/resources/assets/plumbingServices.png"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Installation Services",
+                                "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis consequuntur ex nesciunt itaque voluptatibus quibusdam nisi ducimus?",
+                                "url": "/services/service2/",
+                                "image": "/resources/assets/installationServices.png"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Specialized Plumbing Services",
+                                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, suscipit.",
+                                "url": "/services/service3/",
+                                "image": "/resources/assets/specializedPlumbing.jpg"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Residential Services",
+                                "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam eveniet placeat optio beatae dolores nostrum?",
+                                "url": "/services/service4/",
+                                "image": "/resources/assets/residentailServices.png"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Commercial Plumbing Services",
+                                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, suscipit.",
+                                "url": "/services/service5/",
+                                "image": "/resources/assets/commercialPlumbing.png"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Maintenance Services",
+                                "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi dignissimos ipsa quod quis nostrum fuga cumque assumenda quos, natus atque!",
+                                "url": "/services/service6/",
+                                "image": "/resources/assets/maintainancePlumbing.png"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

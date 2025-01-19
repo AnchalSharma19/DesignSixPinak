@@ -1,0 +1,74 @@
+{
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Area Served",
+    "url": "https://example.com/service-areas",
+    "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://example.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Service Areas",
+                "item": "https://example.com/service-areas"
+            }
+        ]
+    },
+    "about": {
+        "@type": "Service",
+        "serviceType": "Area Served",
+        "provider": {
+            "@type": "Organization",
+            "name": "Your Company Name",
+            "url": "https://example.com"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Areas Served",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "name": "New York Metro Area",
+                    "url": "https://example.com/service-areas/area1",
+                    "image": "https://example.com/resources/assets/areaServedOne.png.jpg"
+                },
+                {
+                    "@type": "Offer",
+                    "name": "Albany",
+                    "url": "https://example.com/service-areas/area2",
+                    "image": "https://example.com/resources/assets/areaServedTwo.png.jpg"
+                },
+                {
+                    "@type": "Offer",
+                    "name": "Yonkers",
+                    "url": "https://example.com/service-areas/area3",
+                    "image": "https://example.com/resources/assets/areaServedThree.png.jpg"
+                },
+                {
+                    "@type": "Offer",
+                    "name": "Buffalo",
+                    "url": "https://example.com/service-areas/area4",
+                    "image": "https://example.com/resources/assets/areaServedFour.png.jpg"
+                },
+                {
+                    "@type": "Offer",
+                    "name": "Syracuse",
+                    "url": "https://example.com/service-areas/area5",
+                    "image": "https://example.com/resources/assets/areaServedFive.png.jpg"
+                },
+                {
+                    "@type": "Offer",
+                    "name": "Rochester",
+                    "url": "https://example.com/service-areas/area6",
+                    "image": "https://example.com/resources/assets/areaServedSix.png.jpg"
+                }
+            ]
+        }
+    }
+}

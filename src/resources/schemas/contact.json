@@ -1,0 +1,85 @@
+{
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "mainEntity": {
+        "@type": "Organization",
+        "name": "Your Company Name",
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "contactType": "Customer Service",
+                "telephone": "+ (123) 999 888 77",
+                "email": "example@website.com",
+                "areaServed": "US",
+                "availableLanguage": "English"
+            }
+        ],
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "100 New South Head Rd, Triple",
+            "addressLocality": "New York",
+            "addressRegion": "NY",
+            "postalCode": "10001",
+            "addressCountry": "US"
+        },
+        "sameAs": [
+            "https://www.facebook.com/YourCompany",
+            "https://twitter.com/YourCompany",
+            "https://www.instagram.com/YourCompany"
+        ]
+    },
+    "contactForm": {
+        "@type": "WebPageElement",
+        "name": "Contact Us Form",
+        "url": "/contact",
+        "potentialAction": {
+            "@type": "SendAction",
+            "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "/api/send_email/",
+                "method": "POST"
+            }
+        },
+        "actionStatus": "Active",
+        "description": "Send a message to us using the form below"
+    },
+    "form": {
+        "@type": "FormAction",
+        "name": "Contact Form",
+        "actionStatus": "Active",
+        "target": "/api/send_email/",
+        "formField": [
+            {
+                "@type": "PropertyValue",
+                "name": "Name",
+                "valueRequired": true
+            },
+            {
+                "@type": "PropertyValue",
+                "name": "Email",
+                "valueRequired": true
+            },
+            {
+                "@type": "PropertyValue",
+                "name": "Address",
+                "valueRequired": false
+            },
+            {
+                "@type": "PropertyValue",
+                "name": "Subject",
+                "valueRequired": true
+            },
+            {
+                "@type": "PropertyValue",
+                "name": "Message",
+                "valueRequired": true
+            }
+        ]
+    },
+    "service": {
+        "@type": "Service",
+        "serviceType": "Plumbing and Contact Services",
+        "url": "/contact",
+        "description": "Provide plumbing services and communication with our team through the contact form."
+    }
+}
