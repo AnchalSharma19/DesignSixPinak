@@ -1,0 +1,28 @@
+{
+    "serviceAreas": [
+        {
+            "serviceAreaLink": "/service-areas/area1",
+            "serviceAreaText": "New York Metro Area"
+        },
+        {
+            "serviceAreaLink": "/service-areas/area2",
+            "serviceAreaText": "Albany"
+        },
+        {
+            "serviceAreaLink": "/service-areas/area3",
+            "serviceAreaText": "Yonkers"
+        },
+        {
+            "serviceAreaLink": "/service-areas/area4",
+            "serviceAreaText": "Buffalo"
+        },
+        {
+            "serviceAreaLink": "/service-areas/area5",
+            "serviceAreaText": "Syracuse"
+        },
+        {
+            "serviceAreaLink": "/service-areas/area6",
+            "serviceAreaText": "Rochester"
+        }
+    ]
+}

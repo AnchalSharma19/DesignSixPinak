@@ -16,6 +16,10 @@
   
 
   
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yourdomain.com"},{"@type":"ListItem","position":2,"name":"Sitemap","item":"https://yourdomain.com/sitemap"}]}
+</script>
+  
 
 
   <link rel="icon" href="/resources/assets/logo.png" type="image/png">
@@ -278,91 +282,112 @@
     <main>
         
 
-<header class="sitemap">
-    <div class="sitemap-container">
-        <h1 class="sitemap-heading">Sitemap</h1>
-        <p class="sitemap-sub-text">Explore all the sections of our website</p>
-    </div>
-</header>
-
-<main class="container mx-auto px-6 mb-20 mt-10">
-    <div class="sitemap-grid">
-        <div>
-            <a href="/index/">
-                <h2 class="grid-links-heading">HOME</h2>
-            </a>
-            <ul class="space-y-2">
-                <li><a href="/about/" class="grid-links">About Us</a></li>
-                <li><a href="/services/" class="grid-links">Services</a></li>
-                <li><a href="/service-areas/" class="grid-links">Area Served</a></li>
-                <li><a href="/blogs/" class="grid-links">Blog</a></li>
-                <li><a href="/gallery/" class="grid-links">Gallery</a></li>
-                <li><a href="/contact/" class="grid-links">Contact Us</a></li>
-            </ul>
-        </div>
-
-        <div>
-            <a href="/services/">
-                <h2 class="grid-links-heading">SERVICES</h2>
-            </a>
-            <ul class="space-y-2">
-                <li><a href="/services/service1/" class="grid-links">Plumbing Services</a></li>
-                <li><a href="/services/service2/" class="grid-links">Installation Services
-                    </a></li>
-                <li><a href="/services/service3/" class="grid-links">Specialized Plumbing Services
-                    </a></li>
-                <li><a href="/services/service4/" class="grid-links">Residential Services
-                    </a></li>
-                <li><a href="/services/service5/" class="grid-links">Commercial Plumbing Services
-                    </a></li>
-                <li><a href="/services/service6/" class="grid-links">Maintenance Services</a>
-                </li>
-            </ul>
-
-        </div>
-
-        <div>
-            <a href="">
-                <h2 class="grid-links-heading">AREA SERVED</h2>
-            </a>
-            <ul class="space-y-2">
-                <li><a href="/service-areas/area1/" class="grid-links">New York Metro Area</a>
-                </li>
-                <li><a href="/service-areas/area2/" class="grid-links">Albany</a></li>
-                <li><a href="/service-areas/area3/" class="grid-links">Yonkers</a></li>
-                <li><a href="/service-areas/area4/" class="grid-links">Buffalo</a></li>
-                <li><a href="/service-areas/area5/" class="grid-links">Syracuse</a></li>
-                <li><a href="/service-areas/area6/" class="grid-links">Rochester</a>
-                </li>
-            </ul>
-        </div>
-
-        <div>
-            <a href="/blogs/">
-                <h2 class="grid-links-heading">BLOGS</h2>
-            </a>
-            <ul class="space-y-2">
-                <li><a href="/blogs/the-best-water-filters/" class="grid-links">The Best Water Filters of 2018 – Our Choice</a>
-                </li>
-                <li><a href="/blogs/your-faucets-making-home-unsafe/" class="grid-links">Your Faucets Could Be Making Your Home Unsafe</a></li>
-                <li><a href="/blogs/why-invest-in-good-water-heater/" class="grid-links">Why You Should Invest in a Good Water Heater</a></li>
-                <li><a href="/blogs/how-to-save-money-on-plumbing-repair/" class="grid-links">How to Save Money on Plumbing Repairs</a></li>
-            </ul>
+<div class="banner-container" style="height: 450px;">
+    <div class="banner-bg" style="background-image: url('/resources/assets/bgImage.png');">
+        <div class="banner-style"></div>
+        <div class="banner-Text">
+            <h1 class="bannerHeading">Sitemap</h1>
+            <p class="mt-3 text-lg font-normal">
+                <a href="/" class="hover:underline">Home</a>
+                / <a href="/sitemap" class="hover:underline">Sitemap</a>
+            </p>
         </div>
     </div>
-</main>
+</div>
 
-<main class="container mx-auto px-6 mb-20 mt-10">
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-        <div>
-            <a href="../index.html">
-                <h2 class="grid-links-heading">XML SITEMAP</h2>
-            </a>
-            <ul class="space-y-2">
-                <li><a href="../sitemap.xml" class="grid-links">sitemap.xml</a></li>
-            </ul>
+<section class="relative px-[7%] mt-20 mb-24">
+    <div>
+        <h2 class="text-3xl font-bold text-primary">Sitemap</h2>
+        <p class="mt-3 text-md font-[500]">Our sitemap provides an overview of all the pages on our site.</p>
+        <div class="flex items-start justify-between flex-col mt-4 gap-2">
+
+            <!-- Pages Section (Using footerData for navLinks) -->
+            <div class="site-map-section">
+                <h3 class="text-2xl font-semibold text-primary">Pages</h3>
+                <ul>
+                    
+                    <li><a href="/" class="hover:underline">Home</a></li>
+                    
+                    <li><a href="/contact/" class="hover:underline">Contact Us</a></li>
+                    
+                    <li><a href="/about/" class="hover:underline">About Us</a></li>
+                    
+                    <li><a href="/service-areas/" class="hover:underline">Service Areas</a></li>
+                    
+                    <li><a href="/services/" class="hover:underline">Services</a></li>
+                    
+                    <li><a href="/blogs/" class="hover:underline">Blog</a></li>
+                    
+                    <li><a href="/sitemap/" class="hover:underline">Sitemap</a></li>
+                    
+                    <li><a href="/gallery/" class="hover:underline">Gallery</a></li>
+                    
+                </ul>
+            </div>
+
+            <!-- Blog Posts Section -->
+            <div class="site-map-section mt-3">
+                <h3 class="text-2xl font-semibold text-primary">Blog Posts</h3>
+                <ul>
+                    
+                    <li><a href="/blogs/the-best-water-filters/" class="hover:underline">The Best Water Filters of 2018 – Our Choice</a></li>
+                    
+                    <li><a href="/blogs/your-faucets-making-home-unsafe/" class="hover:underline">Your Faucets Could Be Making Your Home Unsafe</a></li>
+                    
+                    <li><a href="/blogs/why-invest-in-good-water-heater/" class="hover:underline">Why You Should Invest in a Good Water Heater</a></li>
+                    
+                    <li><a href="/blogs/how-to-save-money-on-plumbing-repair/" class="hover:underline">How to Save Money on Plumbing Repairs</a></li>
+                    
+                    <li><a href="/blogs/tips-to-maintain-home-water-quality/" class="hover:underline">Tips to Maintain Your Home&#39;s Water Quality</a></li>
+                    
+                    <li><a href="/blogs/best-practices-for-plumbing/" class="hover:underline">Best Practices for Plumbing in 2024</a></li>
+                    
+                </ul>
+            </div>
+
+            <!-- Service Areas Section (Using serviceAreas from serviceAreas.json) -->
+            <div class="site-map-section mt-3">
+                <h3 class="text-2xl font-semibold text-primary">Service Areas</h3>
+                <ul>
+                    
+                    <li><a href="/service-areas/area1" class="hover:underline">New York Metro Area</a></li>
+                    
+                    <li><a href="/service-areas/area2" class="hover:underline">Albany</a></li>
+                    
+                    <li><a href="/service-areas/area3" class="hover:underline">Yonkers</a></li>
+                    
+                    <li><a href="/service-areas/area4" class="hover:underline">Buffalo</a></li>
+                    
+                    <li><a href="/service-areas/area5" class="hover:underline">Syracuse</a></li>
+                    
+                    <li><a href="/service-areas/area6" class="hover:underline">Rochester</a></li>
+                    
+                </ul>
+            </div>
+
+            <!-- Services Section (Using services from services.json) -->
+            <div class="site-map-section">
+                <h3 class="text-2xl font-semibold text-primary">Services</h3>
+                <ul>
+                    
+                    <li><a href="/services/plumbing-services/" class="hover:underline">Plumbing Services</a></li>
+                    
+                    <li><a href="/services/installation-services/" class="hover:underline">Installation Services</a></li>
+                    
+                    <li><a href="/services/specialized-plumbing/" class="hover:underline">Specialized Plumbing Services</a></li>
+                    
+                    <li><a href="/services/residential-services/" class="hover:underline">Residential Services</a></li>
+                    
+                    <li><a href="/services/commercial-plumbing/" class="hover:underline">Commercial Plumbing Services</a></li>
+                    
+                    <li><a href="/services/maintenance-services/" class="hover:underline">Maintenance Services</a></li>
+                    
+                </ul>
+            </div>
+
         </div>
-</main>
+    </div>
+</section>
 
 
     </main>

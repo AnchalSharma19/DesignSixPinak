@@ -4,41 +4,41 @@
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, suscipit.",
         "image": "/resources/assets/plumbingServices.png",
         "alt": "Plumbing Services",
-        "link": "/services/service1/"
+        "link": "/services/plumbing-services/"
     },
     {
         "title": "Installation Services",
         "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis consequuntur ex nesciunt itaque voluptatibus quibusdam nisi ducimus?",
         "image": "/resources/assets/installationServices.png",
         "alt": "Installation Services",
-        "link": "/services/service2/"
+        "link": "/services/installation-services/"
     },
     {
         "title": "Specialized Plumbing Services",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, suscipit.",
         "image": "/resources/assets/specializedPlumbing.jpg",
         "alt": "Specialized Plumbing",
-        "link": "/services/service3/"
+        "link": "/services/specialized-plumbing/"
     },
     {
         "title": "Residential Services",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam eveniet placeat optio beatae dolores nostrum?",
         "image": "/resources/assets/residentailServices.png",
         "alt": "Residential Services",
-        "link": "/services/service4/"
+        "link": "/services/residential-services/"
     },
     {
         "title": "Commercial Plumbing Services",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, suscipit.",
         "image": "/resources/assets/commercialPlumbing.png",
         "alt": "Commercial Plumbing Services",
-        "link": "/services/service5/"
+        "link": "/services/commercial-plumbing/"
     },
     {
         "title": "Maintenance Services",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi dignissimos ipsa quod quis nostrum fuga cumque assumenda quos, natus atque!",
         "image": "/resources/assets/maintainancePlumbing.png",
         "alt": "Maintenance Services",
-        "link": "/services/service6/"
+        "link": "/services/maintenance-services/"
     }
 ]

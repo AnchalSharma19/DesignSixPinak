@@ -3,9 +3,12 @@ const markdownItFootnote = require("markdown-it-footnote");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const { addPagesWithSchema, addBreadcrumbSchema } = require("./src/resources/scripts/schema.js");
 const { breadcrumbsFilter } = require("./src/resources/scripts/filters/breadcrumbs.js");
+const { DateTime } = require("luxon");
+const { execSync } = require("child_process");
 
 
 module.exports = function (eleventyConfig) {
+
     // Configure Markdown-It with Footnote support
     const markdownItInstance = markdownIt({
         html: true,
@@ -21,6 +24,9 @@ module.exports = function (eleventyConfig) {
         return markdownItInstance.render(content || "");
     });
 
+    // Schemas 
+    addPagesWithSchema(eleventyConfig);
+    addBreadcrumbSchema(eleventyConfig);
 
     // Breadcrumbs filter
     eleventyConfig.addFilter("breadcrumbs", breadcrumbsFilter);
@@ -37,6 +43,8 @@ module.exports = function (eleventyConfig) {
     // Watch Targets
     eleventyConfig.addWatchTarget("./src/resources/css/");
     eleventyConfig.addWatchTarget("./src/resources/scripts/");
+    eleventyConfig.addWatchTarget('./src/resources/schemas/');
+    eleventyConfig.addPassthroughCopy("src/resources/xml");
 
 
     // Blog Collection
@@ -48,6 +56,26 @@ module.exports = function (eleventyConfig) {
     });
 
 
+    eleventyConfig.addFilter("date", (date, format = "yyyy-MM-dd") => {
+        if (!date) {
+            return "";
+        }
+        return DateTime.fromJSDate(new Date(date)).toFormat(format);
+    });
+
+
+    eleventyConfig.addFilter("getGitLastModifiedDate", function (inputPath) {
+        try {
+            const gitCommand = `git log -1 --format=%ci ${inputPath}`;
+            const result = execSync(gitCommand).toString().trim();
+            return result ? new Date(result) : null;
+        } catch (error) {
+            console.error(`Error fetching Git last modified date for ${inputPath}:`, error);
+            return null;
+        }
+    });
+
+
 
     // Eleventy Configuration
     return {
@@ -56,7 +84,7 @@ module.exports = function (eleventyConfig) {
             includes: "_includes",
             output: "_site",
         },
-        templateFormats: ["md", "njk", "html"],
+        templateFormats: ["md", "njk", "html", "xml"],
         markdownTemplateEngine: "njk",
         htmlTemplateEngine: "njk",
         dataTemplateEngine: "njk",

@@ -1,0 +1,36 @@
+{
+    "footerLinks": [
+        {
+            "footerText": "Home",
+            "footerLink": "/"
+        },
+        {
+            "footerText": "Contact Us",
+            "footerLink": "/contact/"
+        },
+        {
+            "footerText": "About Us",
+            "footerLink": "/about/"
+        },
+        {
+            "footerText": "Service Areas",
+            "footerLink": "/service-areas/"
+        },
+        {
+            "footerText": "Services",
+            "footerLink": "/services/"
+        },
+        {
+            "footerText": "Blog",
+            "footerLink": "/blogs/"
+        },
+        {
+            "footerText": "Sitemap",
+            "footerLink": "/sitemap/"
+        },
+        {
+            "footerText": "Gallery",
+            "footerLink": "/gallery/"
+        }
+    ]
+}
