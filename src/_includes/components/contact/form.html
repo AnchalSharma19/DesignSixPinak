@@ -37,16 +37,20 @@
                     <form id="contact-form" action="/api/send_email/" method="POST" class="space-y-4 md:space-y-6">
                         <div class="form-grid">
 
-                            <input type="text" id="name" placeholder="Enter your name" class="form-placeholder" />
+                            <input type="text" id="name" placeholder="Enter your name" class="form-placeholder"
+                                required />
 
-                            <input type="email" id="email" placeholder="Enter your email" class="form-placeholder" />
+                            <input type="email" id="email" placeholder="Enter your email" class="form-placeholder"
+                                required />
 
                         </div>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
 
-                            <input type="text" placeholder="Your address" id="address" class="form-placeholder" />
+                            <input type="text" placeholder="Your address" id="address" class="form-placeholder"
+                                required />
 
-                            <input type="text" placeholder="Your subject" id="subject" class="form-placeholder" />
+                            <input type="text" placeholder="Your subject" id="subject" class="form-placeholder"
+                                required />
 
                         </div>
 
