@@ -283,7 +283,7 @@
 }
 
 .counter-value {
-    @apply text-6xl font-bold text-headingYellow;
+    @apply text-6xl font-bold text-primary;
 }
 
 .counter-description {
@@ -298,7 +298,7 @@
 /* Blog Cards */
 
 .blog-section {
-    @apply cards-section flex flex-col items-center justify-center text-white relative pb-16 bg-cover bg-center md:pt-80 pt-96;
+    @apply cards-section flex flex-col items-center justify-center text-white relative pb-16 bg-cover bg-center md:pt-80 pt-[400px];
 }
 
 .blog-cards-container {
@@ -422,6 +422,7 @@
 
 .keen-slider__slide {
     @apply flex-shrink-0 w-full opacity-100 transition-opacity duration-500;
+
 }
 
 .customer-section {
@@ -784,7 +785,7 @@
 }
 
 .circle-progressbar {
-    @apply absolute text-4xl font-bold text-headingYellow;
+    @apply absolute text-4xl font-bold text-primary;
 }
 
 .progress-text {

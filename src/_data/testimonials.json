@@ -14,25 +14,25 @@
     {
         "image": "resources/assets/customerOne.jpg",
         "name": "John Doe",
-        "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos distinctio atque corporis .",
+        "review": "Lorem ipsum dolor sit, amet consectetur adipisicing elit, amet consectetur adipisicing elit.",
         "stars": 3
     },
     {
         "image": "resources/assets/customerTwo.jpg",
         "name": "Jane Smith",
-        "review": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+        "review": "Lorem ipsum dolor sit, amet consectetur adipisicing elit, amet consectetur adipisicing elit.",
         "stars": 5
     },
     {
         "image": "resources/assets/customerOne.jpg",
         "name": "Emily Davis",
-        "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, eaque!.",
+        "review": "Lorem ipsum dolor sit, amet consectetur adipisicing elit, amet consectetur adipisicing elit.",
         "stars": 4
     },
     {
         "image": "resources/assets/customerTwo.jpg",
         "name": "Michael Brown",
-        "review": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur magni molestias quos.",
+        "review": "Lorem ipsum dolor sit, amet consectetur adipisicing elit, amet consectetur adipisicing elit.",
         "stars": 5
     }
 ]

@@ -167,7 +167,7 @@ document.addEventListener("DOMContentLoaded", () => {
         progressCircle.setAttribute("cx", "50");
         progressCircle.setAttribute("cy", "50");
         progressCircle.setAttribute("r", "45");
-        progressCircle.setAttribute("stroke", "#FFF689");
+        progressCircle.setAttribute("stroke", "#3c82f6");
         progressCircle.setAttribute("stroke-width", "10");
         progressCircle.setAttribute("fill", "none");
         progressCircle.setAttribute("stroke-dasharray", "282.6");
